@@ -1,0 +1,16 @@
+.main-content__photo-sample {
+  position: relative;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  min-height: 400px;
+}
+
+.main-content__photo-sample::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  width: 257px;
+  height: 286px;
+  bottom: 0px;
+}

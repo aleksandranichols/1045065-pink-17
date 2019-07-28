@@ -1,0 +1,20 @@
+.main-content-photos {
+  text-align: center;
+  background-color: $white-background;
+}
+
+.main-content-photos__current-page {
+  display: block;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  font-size: 24px;
+  color: $white-color;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 45px;
+  padding-top:35px;
+  padding-bottom: 50px;
+  width: 225px;
+  min-height: 80px;
+}

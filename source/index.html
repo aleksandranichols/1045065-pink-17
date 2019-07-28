@@ -3,18 +3,20 @@
     <head>
       <meta charset="utf-8">
       <title>HTML Academy: Пинк</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
-    <body>
+    <body class="main-page">
       <header class="main-header">
         <a class="main-header__logolink">
-          <img class="main-header__logo-image main-header__logo-image--bottom" src="http://placehold.it/75x22" alt="Логотип «Пинк»" width="75" height="22">
+          <img class="main-header__logo-image main-header__logo-image--bottom" src="img/logo-pink-white-mobile.svg" alt="Логотип «Пинк»" width="75" height="22">
         </a>
         <nav class="main-navigation">
           <button class="main-navigation__open-button button" type="button" aria-label="Открыть меню"></button>
           <div class="main-navigation__wrapper">
             <button class="main-navigation__close-button button" type="button" aria-label="Закрыть меню"></button>
             <a class="main-navigation__logo-link">
-              <img class="main-navigation__logo-image main-navigation__logo-image--top" src="http://placehold.it/75x22" alt="Логотип «Пинк»" width="75" height="22">
+              <img class="main-navigation__logo-image main-navigation__logo-image--top" src="img/logo-pink-white-mobile.svg" alt="Логотип «Пинк»" width="75" height="22">
             </a>
             <ul class="main-navigation__navigation-list navigation-list">
               <li class="navigation-list__navigation-item"><a href="index.html">Главная</a></li>
@@ -27,7 +29,7 @@
       </header>
       <main class="main-content">
         <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней в розовый цвет</h1>
-        <img class="main-content__photo-sample" src="http://placehold.it/320x314" alt="Пример использования приложения">
+        <div class="main-content__photo-sample"></div>
         <section class="main-content__downloads downloads">
           <h2 class="visually-hidden">Приложение можно скачать на iPhone, iPad, Android, Windows Phone, OS X, Windows 8</h2>
           <a class="downloads__button button" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
@@ -58,7 +60,7 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__photo-sample" src="http://placehold.it/263x467" alt="Пример использования приложения">
+          <img class="advantages__photo-sample" src="img/iphone-screen-mobile@1x.png" width="157" height="277" alt="Пример использования приложения">
         </section>
       </main>
       <footer class="main-footer">
