@@ -9,12 +9,12 @@
 }
 
 .photos-list__item {
-  padding: 0px 20px;
+  padding: 0 20px;
   margin-bottom: 20px;
 }
 
 .photos-list__item:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .photos-list__wrapper {
@@ -27,7 +27,7 @@
 }
 
 .photos-list__item-featured .photos-list__wrapper:first-of-type {
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 .photos-list__image-full,
@@ -49,7 +49,7 @@
 
 .photos-list__item p,
 .photos-list__item-featured p {
-  margin: 0px;
+  margin: 0;
 }
 
 .photos-list__author {

@@ -6,7 +6,7 @@
 .advantages__advantages-list {
   @include list-clear;
   margin-bottom: 70px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .advantages__item {
@@ -23,7 +23,7 @@
 }
 
 .advantages__header p {
-  margin: 0px;
+  margin: 0;
 }
 
 .advantages__title {
