@@ -1,0 +1,13 @@
+.navigation-list {
+  @include list-clear;
+  text-align: center;
+}
+
+.navigation-list__navigation-item {
+  @include navigation-item-paddings;
+}
+
+.navigation-list__navigation-item a {
+  @include a-clear;
+  @include navigation-item-paddings;
+}

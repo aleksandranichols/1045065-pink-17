@@ -1,0 +1,21 @@
+.main-content-form {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.main-content-form__current-page {
+  display: block;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  font-size: 24px;
+  color: $white-color;
+  font-weight: 300;
+  margin-left: -20px; //??
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 50px;
+  padding-right: 45px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 225px;
+  min-height: 80px;
+}

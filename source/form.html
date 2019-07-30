@@ -3,46 +3,54 @@
     <head>
       <meta charset="utf-8">
       <title>HTML Academy: Пинк</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
-    <body>
+    <body class="main-page">
       <header class="main-header">
-        <a class="main-header__logolink">
-          <img class="main-header__logo-image main-header__logo-image--top" src="http://placehold.it/75x22" alt="Логотип «Пинк»" width="75" height="22">
-        </a>
-        <nav class="main-navigation">
-          <button class="main-navigation__open-button button" type="button" aria-label="Открыть меню"></button>
-          <div class="main-navigation__wrapper">
-            <button class="main-navigation__close-button button" type="button" aria-label="Закрыть меню"></button>
-            <a class="main-navigation__logo-link">
-              <img class="main-navigation__logo-image main-navigation__logo-image--menu-open" src="http://placehold.it/75x22" alt="Логотип «Пинк»" width="75" height="22">
-            </a>
-            <ul class="main-navigation__navigation-list navigation-list">
-              <li class="navigation-list__navigation-item"><a href="index.html">Главная</a></li>
-              <li class="navigation-list__navigation-item"><a href="photos.html">Фотографии</a></li>
-              <li class="navigation-list__navigation-item"><a href="competition.html">Конкурс</a></li>
-              <li class="navigation-list__navigation-item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="header-container">
+          <a class="main-header__logolink">
+            <img class="main-header__logo-image main-header__logo-image--top" src="img/logo-pink-white-mobile.svg" alt="Логотип «Пинк»" width="75" height="22">
+          </a>
+          <nav class="main-navigation">
+            <button class="main-navigation__open-button button" type="button" aria-label="Открыть меню"></button>
+            <div class="main-navigation__wrapper">
+              <button class="main-navigation__close-button button" type="button" aria-label="Закрыть меню"></button>
+              <a class="main-navigation__logo-link">
+                <img class="main-navigation__logo-image main-navigation__logo-image--menu-open" src="img/logo-pink-white-mobile.svg" alt="Логотип «Пинк»" width="75" height="22">
+              </a>
+              <ul class="main-navigation__navigation-list navigation-list">
+                <li class="navigation-list__navigation-item"><a href="index.html">Главная</a></li>
+                <li class="navigation-list__navigation-item"><a href="photos.html">Фотографии</a></li>
+                <li class="navigation-list__navigation-item"><a href="competition.html">Конкурс</a></li>
+                <li class="navigation-list__navigation-item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
-      <main class="main-content">
-        <p class="main-content__current-page">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <main class="main-content-form">
+        <div class="main-container">
+          <p class="main-content-form__current-page">Конкурс на самое безбашенное путешествие с Пинк</p>
+        </div>
       </main>
       <footer class="main-footer">
-        <a class="main-footer__logolink">
-          <img class="main-footer__logo-image main-footer__logo-image--bottom" src="http://placehold.it/75x22" alt="Логотип «Пинк»" width="75" height="22">
-        </a>
-        <ul class="main-footer__socials socials-list">
-          <li class="socials-list__item"><a href="#">Twitter</a></li>
-          <li class="socials-list__item"><a href="#">Facebook</a></li>
-          <li class="socials-list__item"><a href="#">Youtube</a></li>
-        </ul>
-        <div class="main-footer__copyright copyright">
-          <p>Разработано</p>
-          <a class="copyright__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__htmlacademy-image" src="http://placehold.it/75x22" alt="Логотип «HTML Academy»" width="75" height="22">
-          HTML Academy
+        <div class="footer-container">
+          <a class="main-footer__logolink">
+            <img class="main-footer__logo-image main-footer__logo-image--bottom" src="img/logo-pink-blue-mobile.svg" alt="Логотип «Пинк»" width="146" height="40">
           </a>
+          <ul class="main-footer__socials socials-list">
+            <li class="socials-list__item"><a href="#">Twitter</a></li>
+            <li class="socials-list__item"><a href="#">Facebook</a></li>
+            <li class="socials-list__item"><a href="#">Youtube</a></li>
+          </ul>
+          <div class="main-footer__copyright copyright">
+            <p class="copyright__htmlacademy">Разработано
+              <a class="copyright__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="copyright__htmlacademy-image" src="img/logo-htmlacademy.svg" alt="Логотип «HTML Academy»" width="27" height="34">
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </body>

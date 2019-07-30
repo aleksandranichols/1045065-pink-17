@@ -1,0 +1,41 @@
+.advantages {
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+}
+
+.advantages__advantages-list {
+  @include list-clear;
+  margin-bottom: 70px;
+  padding: 0 20px;
+}
+
+.advantages__item {
+  margin-bottom: 40px;
+}
+
+.advantages__header {
+  background-color: $white-background;
+  color: rgb(40, 54, 69);
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.advantages__header p {
+  margin: 0;
+}
+
+.advantages__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.advantages__description {
+  line-height: 24px;
+}
+
+.advantages__photo-sample {
+  background-color: rgb(242, 242, 242);
+}

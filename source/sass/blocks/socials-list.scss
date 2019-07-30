@@ -1,0 +1,7 @@
+.socials-list {
+  @include list-clear;
+}
+
+.socials-list__item a {
+  @include a-clear;
+}

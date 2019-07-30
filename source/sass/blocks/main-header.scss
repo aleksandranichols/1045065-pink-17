@@ -1,0 +1,13 @@
+.main-header {
+  background-color: $header-background-color;
+  color: $white-color;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-header__logo-image {
+  padding-top: 20px;
+}
