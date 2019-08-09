@@ -13,7 +13,43 @@
   line-height: 24px;
 }
 
+.downloads .downloads__slogan {
+  display: none;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 40px;
+  text-align: center;
+}
+
 .downloads__button {
   display: block;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads {
+    width: 300px;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 1;
+    order: -1;
+  }
+
+  .downloads p {
+    font-size: 18px;
+  }
+
+  .downloads .downloads__slogan {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    width: 380px;
+    padding: 0;
+  }
 }

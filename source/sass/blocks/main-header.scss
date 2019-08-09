@@ -1,13 +1,42 @@
 .main-header {
   background-color: $header-background-color;
   color: $white-color;
-  padding: 0 20px;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.main-header__logo-image {
+.main-header__logolink {
+  display: none; // while menu is open
+  // display: block;
+  margin-right: 130px;
+}
+
+.main-header__logo-image-mobile {
+  display: none; // while menu is open
   padding-top: 20px;
+}
+
+.main-header__logo-image-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo-image-tablet {
+    display: block;
+  }
+
+  .main-header__logo-image-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
 }

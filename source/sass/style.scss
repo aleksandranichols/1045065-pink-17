@@ -1,12 +1,17 @@
 @import "blocks/html.scss";
 @import "mixins.scss";
 @import "variables.scss";
+@import "scaffolding.scss";
+@import "blocks/button.scss";
 @import "blocks/main-page.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-content.scss";
 @import "blocks/main-content-form.scss";
 @import "blocks/main-content-photos.scss";
 @import "blocks/main-navigation.scss";
+@import "blocks/header-container.scss";
+@import "blocks/main-container.scss";
+@import "blocks/footer-container.scss";
 @import "blocks/navigation-list.scss";
 @import "blocks/options-list.scss";
 @import "blocks/photos.scss";
@@ -14,6 +19,8 @@
 @import "blocks/socials-list.scss";
 @import "blocks/downloads.scss";
 @import "blocks/advantages.scss";
+@import "blocks/effects.scss";
+@import "blocks/slider.scss";
 @import "blocks/main-footer.scss";
+@import "blocks/main-footer-inner.scss";
 @import "blocks/copyright.scss";
-@import "blocks/button.scss";

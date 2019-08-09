@@ -1,0 +1,74 @@
+.effects {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effects {
+    display: flex;
+    background-color: $white-background;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-right: 20px;
+    padding-left: 40px;
+    text-align: left;
+  }
+
+  .effects__timer {
+    margin: 0;
+    position: relative;
+    font-size: 96px;
+    line-height: 150px;
+    color: $lipstick-color;
+    font-weight: bold;
+    border: 15px solid $lipstick-color;
+    border-radius: 50%;
+    margin-right: 80px;
+    padding: 10px 42px;
+    z-index: 1;
+  }
+
+  .effects__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-timer.svg");
+    width: 238px;
+    height: 276px;
+    left: 27px;
+    bottom: 57px;
+  }
+
+  .effects__wrapper p {
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkblue-color;
+  }
+
+  .effects__wrapper p:first-of-type {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: $black-color;
+  }
+
+  .effects a {
+    text-decoration: underline;
+    color: $lipstick-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effects {
+    background-color: rgb(242, 242, 242);
+    padding-left: 150px;
+    padding-right: 100px;
+  }
+
+  .effects__wrapper {
+    width: 400px;
+  }
+
+  .effects__wrapper::before {
+    bottom: 56px;
+    left: 137px;
+  }
+}

@@ -6,3 +6,10 @@
 .photos__header p {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .photos__header p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

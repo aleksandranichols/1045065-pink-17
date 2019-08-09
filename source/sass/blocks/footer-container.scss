@@ -1,0 +1,25 @@
+.footer-container {
+  width: auto;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  background-color: $white-background;
+  padding: 40px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-container {
+    width: 1200px;
+    padding: 0 130px;
+  }
+}
