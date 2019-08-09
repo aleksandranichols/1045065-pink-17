@@ -5,3 +5,15 @@
 .copyright__htmlacademy {
   margin: 0;
 }
+
+.copyright__htmlacademy-link {
+  &:hover path,
+  &:focus path {
+    fill: $darkblue-color;
+  }
+
+  &:active path {
+    fill: $darkblue-color;
+    opacity: 0.3;
+  }
+}

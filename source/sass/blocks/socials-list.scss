@@ -1,5 +1,6 @@
 .socials-list {
   @include list-clear;
+  display: flex;
 }
 
 .socials-list__item a {

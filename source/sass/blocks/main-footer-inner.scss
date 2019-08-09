@@ -1,12 +1,9 @@
-.main-footer {
-  display: none;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.main-footer-inner {
   text-align: center;
   background-color: $white-background;
 }
 
-.main-footer__logolink {
+.main-footer-inner__logolink {
   display: block;
 
   &:hover path,
@@ -20,20 +17,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer {
+  .main-footer-inner {
     padding: 0 20px;
     display: block;
   }
 
-  .main-footer__logolink,
-  .main-footer__socials {
+  .main-footer-inner__logolink,
+  .main-footer-inner__socials {
     margin-right: 70px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .main-footer {
+  .main-footer-inner {
     display: flex;
     background-color: $darkblue-color;
     width: 1200px;
@@ -41,8 +38,8 @@
     padding: 0 130px;
   }
 
-  .main-footer__logolink,
-  .main-footer__socials {
+  .main-footer-inner__logolink,
+  .main-footer-inner__socials {
     margin-right: 220px;
   }
 }
