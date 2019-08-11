@@ -44,7 +44,7 @@
 @media (min-width: $desktop-width) {
   .navigation-list {
     display: flex;
-    width: 800;
+    width: 800px;
     align-items: center;
     font-weight: normal;
     text-transform: none;
@@ -55,7 +55,7 @@
       color: transparentize($white-color, 0.3);
     }
 
-    margin-right: 80;
+    margin-right: 40px;
     padding: 0;
   }
 

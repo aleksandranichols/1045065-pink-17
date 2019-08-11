@@ -37,5 +37,8 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "install": "^0.13.0"
   }
 }
