@@ -19,7 +19,7 @@
 
 @media (min-width: $desktop-width) {
   .footer-container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 130px;
   }
 }

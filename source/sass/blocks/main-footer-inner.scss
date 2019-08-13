@@ -31,11 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer-inner {
-    display: flex;
-    background-color: $darkblue-color;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 130px;
+    width: 100%;
   }
 
   .main-footer-inner__logolink,

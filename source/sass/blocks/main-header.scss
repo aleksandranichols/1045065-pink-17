@@ -1,5 +1,4 @@
 .main-header {
-  background-color: $header-background-color;
   color: $white-color;
   font-size: 18px;
   line-height: 32px;
@@ -34,9 +33,10 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    padding: 0 130px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: transparentize($darkblue-color, 0.3);
+    min-height: 110px;
   }
 }
