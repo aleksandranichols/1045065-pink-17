@@ -13,6 +13,8 @@
 
 @media (min-width: $desktop-width) {
   .main-container {
-    width: 1200px;
+    position: relative;
+    width: 960px;
+    padding: 0 130px;
   }
 }
