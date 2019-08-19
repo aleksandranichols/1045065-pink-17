@@ -2,19 +2,29 @@
   @include list-clear;
   line-height: 24px;
   color: rgb(40, 54, 69);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .photos-list__item-featured {
+  position: relative;
+  margin: 0;
   margin-bottom: 20px;
 }
 
-.photos-list__item {
-  padding: 0 20px;
+.photos-list__item:not(:first-of-type) {
   margin-bottom: 20px;
+  padding: 0 20px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.photos-list__featured-description {
+  padding: 0 20px;
 }
 
 .photos-list__wrapper {
@@ -24,10 +34,7 @@
   padding-bottom: 25px;
   padding-left: 17px;
   text-align: left;
-}
-
-.photos-list__item-featured .photos-list__wrapper:first-of-type {
-  margin: 0 20px;
+  width: auto;
 }
 
 .photos-list__image-full,
@@ -43,8 +50,8 @@
 
 .photos-list__item-featured .photos-list__image-full-featured {
   @include a-clear;
-  width: 320px;
-  height: 170px;
+  width: auto;
+  height: 137px;
 }
 
 .photos-list__item p,
@@ -75,10 +82,12 @@
 
 .photos-list__featured-tag {
   display: block;
+  position: absolute;
+  right: 0;
   font-weight: bold;
   background-color: $lipstick-color;
   color: $white-color;
-  width: 99px;
+  width: 110px;
   height: 12px;
   padding-top: 8px;
   padding-right: 21px;
@@ -89,8 +98,11 @@
 @media (min-width: $tablet-width) {
   .photos-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: auto;
+    padding: 0 20px;
+    justify-content: space-between;
   }
 
   .photos-list__wrapper {
@@ -99,11 +111,19 @@
     padding-bottom: 0;
   }
 
-  .photos-list__item-featured .photos-list__wrapper {
-    width: 580px;
+  .photos-list__featured-description {
+    padding: 0;
   }
 
-  .photos-list__item {
+  .photos-list__featured-tag {
+    top: 60px;
+  }
+
+  .photos-list__item-featured .photos-list__wrapper {
+    min-width: 580px;
+  }
+
+  .photos-list__item:not(:first-of-type) {
     padding: 0;
   }
 
@@ -113,12 +133,15 @@
 
   .photos-list__image-small--featured {
     width: 660px;
+    margin-left: -20px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .photos-list {
     justify-content: space-between;
+    padding: 0;
   }
 
   .photos-list__item {
@@ -128,6 +151,7 @@
   .photos-list .photos-list__item-featured {
     padding: 0;
   }
+
 
   .photos-list__item-featured .photos-list__wrapper {
     min-height: 130px;

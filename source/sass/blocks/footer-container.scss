@@ -4,6 +4,7 @@
   margin: 0 auto;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   background-color: $white-background;
   padding: 40px 0;
 }
@@ -11,7 +12,6 @@
 @media (min-width: $tablet-width) {
   .footer-container {
     flex-direction: row;
-    justify-content: space-around;
     width: auto;
     padding: 0;
   }

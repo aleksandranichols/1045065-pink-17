@@ -2,30 +2,21 @@
   background-color: rgb(29, 38, 49);
   color: $white-color;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 20px;
 }
 
 .downloads p {
+  margin: 0;
   font-weight: 300;
   line-height: 24px;
 }
 
-.downloads .downloads__slogan {
-  display: none;
-  font-size: 40px;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0 40px;
-  text-align: center;
-}
-
 .downloads__button {
   display: block;
+  margin-bottom: 35px;
+}
+
+.downloads__options {
   margin-bottom: 35px;
 }
 
@@ -35,15 +26,10 @@
     background-color: transparent;
     padding: 20px;
     z-index: 1;
-    order: -1;
   }
 
   .downloads p {
     font-size: 18px;
-  }
-
-  .downloads .downloads__slogan {
-    display: block;
   }
 }
 
@@ -51,5 +37,10 @@
   .downloads {
     width: 380px;
     padding: 0;
+  }
+
+  .downloads__button,
+  .downloads__options {
+    margin-bottom: 60px;
   }
 }

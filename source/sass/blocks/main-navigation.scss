@@ -1,8 +1,97 @@
-.main-navigation__open-button {
-  display: none; // while menu is open
+@media (max-width: $desktop-width) {
+  .main-navigation__toggle {
+    cursor: pointer;
+    height: 25px;
+    width: 50px;
+    padding: 10px;
+    background-color: $darkblue-color;
+    border: none;
+    border-radius: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $darkblue-color;
+    }
+  }
+
+  .main-navigation--opened .main-navigation__toggle {
+    &:hover,
+    &:focus,
+    &:active {
+      width: 25px;
+    }
+  }
+
+  .main-navigation--opened .main-navigation__toggle::before {
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    transform: rotate(45deg);
+    background-color: $white-color;
+    right: 20px;
+    top: 30px;
+  }
+
+  .main-navigation--opened .main-navigation__toggle::after {
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    transform: rotate(-45deg);
+    background-color: $white-color;
+    right: 20px;
+    top: 30px;
+  }
+
+  .main-navigation--closed .main-navigation__toggle::before {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: $white-color;
+    box-shadow: 0 10px 0 0 $white-color, 0 20px 0 0 $white-color;
+    right: 20px;
+    top: 20px;
+  }
+
+  .main-navigation--closed .main-navigation__toggle:hover::before,
+  .main-navigation--closed .main-navigation__toggle:focus::before {
+    background-color: $lipstick-color;
+    box-shadow: 0 10px 0 0 $lipstick-color, 0 20px 0 0 $lipstick-color;
+  }
+
+  .main-navigation--opened .main-navigation__toggle:hover::before,
+  .main-navigation--opened .main-navigation__toggle:hover::after,
+  .main-navigation--opened .main-navigation__toggle:focus::before,
+  .main-navigation--opened .main-navigation__toggle:focus::after {
+    background-color: $lipstick-color;
+  }
+
+  .main-navigation--closed .main-navigation__toggle:active::before {
+    background-color: transparentize($lipstick-color, 0.3);
+    box-shadow: 0 10px 0 0 transparentize($lipstick-color, 0.3), 0 20px 0 0 transparentize($lipstick-color, 0.3);
+  }
+
+  .main-navigation--opened .main-navigation__toggle:active::before,
+  .main-navigation--opened .main-navigation__toggle:active::after {
+    background-color: transparentize($lipstick-color, 0.3);
+  }
+
+  .main-navigation--opened .main-navigation__navigation-list {
+    display: block;
+  }
+
+  .main-navigation--closed .main-navigation__navigation-list {
+    display: none;
+  }
 }
 
 .main-navigation__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -16,13 +105,11 @@
   display: none;
 }
 
-.main-navigation__open-button,
-.main-navigation__close-button {
-  padding: 10px;
-  border: none;
-}
-
 @media (min-width: $tablet-width) {
+  .main-navigation__logo-wrapper {
+    padding: 40px 20px;
+  }
+
   .main-navigation__logo-image-mobile {
     display: none;
   }
@@ -30,12 +117,32 @@
   .main-navigation__logo-image-tablet {
     display: block;
   }
+
+  .main-navigation__toggle {
+    height: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .main-navigation--closed .main-navigation__toggle::before {
+    top: 55px;
+  }
+
+  .main-navigation--opened .main-navigation__toggle::before,
+  .main-navigation--opened .main-navigation__toggle::after {
+    top: 65px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-navigation__wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+  }
+
+  .main-navigation__logo-wrapper {
+    padding: 40px 0;
   }
 
   .main-navigation {
@@ -44,7 +151,7 @@
   }
 
   .main-navigation__logo-image-tablet,
-  .main-navigation__close-button {
+  .main-navigation__toggle {
     display: none;
   }
 

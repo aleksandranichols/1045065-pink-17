@@ -3,8 +3,13 @@
   background-color: $white-background;
 }
 
+.main-footer-inner__socials {
+  margin-bottom: 40px;
+}
+
 .main-footer-inner__logolink {
   display: block;
+  margin-bottom: 40px;
 
   &:hover path,
   &:focus path {
@@ -18,13 +23,13 @@
 
 @media (min-width: $tablet-width) {
   .main-footer-inner {
-    padding: 0 20px;
-    display: block;
+    padding: 40px 20px;
   }
 
   .main-footer-inner__logolink,
   .main-footer-inner__socials {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 

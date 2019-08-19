@@ -1,9 +1,14 @@
 .copyright {
+  display: flex;
+  width: 120px;
+  flex-wrap: wrap;
   line-height: 18px;
 }
 
 .copyright__htmlacademy {
   margin: 0;
+  margin-right: 15px;
+  align-self: center;
 }
 
 .copyright__htmlacademy-link {
@@ -15,5 +20,22 @@
   &:active path {
     fill: $darkblue-color;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 150px;
+  }
+
+  .copyright__htmlacademy {
+    font-size: 18px;
+
   }
 }

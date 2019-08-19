@@ -9,6 +9,10 @@
   .main-container {
     width: auto;
   }
+
+  .main-container--flex-row {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -1,9 +1,8 @@
 .main-page {
+  @include body-formatting;
   display: flex;
   margin: 0 auto;
   position: relative;
   flex-direction: column;
-  @include body-formatting;
-  min-width: 250px;
-  margin: 0;
+  min-width: 300px;
 }
