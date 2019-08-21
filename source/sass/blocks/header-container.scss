@@ -13,10 +13,7 @@
 
 @media (min-width: $desktop-width) {
   .header-container {
-    position: absolute;
-    width: 940px;
-    background-color: transparentize($darkblue-color, 0.3);
-    z-index: 1;
+    max-width: 960px;
     padding: 0 130px;
   }
 }

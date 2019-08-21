@@ -1,7 +1,58 @@
 .options-list {
   @include list-clear;
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.options-list__item {
+  position: relative;
+  height: 60px;
+  width: 50px;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .options-list__item a {
   @include a-clear;
+  display: block;
+  height: 60px;
+  width: 50px;
+}
+
+.options-list__appstore::before {
+  content: " ";
+  position: absolute;
+  background-image: url("/img/logo-apple.svg");
+  background-repeat: no-repeat;
+  height: 57px;
+  width: 46px;
+  bottom: 0;
+  left: 0;
+}
+
+.options-list__googleplaystore::before {
+  content: " ";
+  position: absolute;
+  background-image: url("/img/logo-android.svg");
+  background-repeat: no-repeat;
+  height: 47px;
+  width: 42px;
+  bottom: 0;
+  left: 0;
+}
+
+.options-list__windowsstore::before {
+  content: " ";
+  position: absolute;
+  background-image: url("/img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  height: 41px;
+  width: 44px;
+  bottom: 0;
+  left: 0;
 }

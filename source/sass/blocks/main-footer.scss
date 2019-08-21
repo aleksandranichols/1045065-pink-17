@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
-    padding: 0 20px;
+    padding: 40px 20px;
     display: block;
   }
 
@@ -34,11 +34,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer {
-    display: flex;
-    background-color: $darkblue-color;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 130px;
+    width: 100%;
   }
 
   .main-footer__logolink,
