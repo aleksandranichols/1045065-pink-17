@@ -149,7 +149,6 @@
   .photos-list__image-small--featured {
     width: 660px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -162,7 +161,7 @@
   }
 
   .photos-list .photos-list__item-featured,
-  .photos-list__featured-description  {
+  .photos-list__featured-description {
     padding: 0;
     margin-right: 0;
     margin-left: 0;
