@@ -4,13 +4,15 @@
   color: rgb(40, 54, 69);
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
+}
+
+.photos-list__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .photos-list__item-featured {
   position: relative;
-  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -24,10 +26,18 @@
 }
 
 .photos-list__featured-description {
+  width: auto;
   padding: 0 20px;
 }
 
-.photos-list__wrapper {
+.photos-list__non-featured-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.photos-list__overview-wrapper {
   background-color: rgb(242, 242, 242);
   padding-top: 25px;
   padding-right: 23px;
@@ -46,6 +56,7 @@
   @include a-clear;
   width: 280px;
   height: 180px;
+  align-self: center;
 }
 
 .photos-list__item-featured .photos-list__image-full-featured {
@@ -101,30 +112,34 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
-    padding: 0 20px;
     justify-content: space-between;
+    padding: 0 20px;
   }
 
-  .photos-list__wrapper {
+  .photos-list__overview-wrapper {
     width: 260px;
     min-height: 130px;
     padding-bottom: 0;
   }
 
-  .photos-list__featured-description {
-    padding: 0;
+  .photos-list__item-featured {
+    margin-left: -20px;
   }
 
   .photos-list__featured-tag {
     top: 60px;
   }
 
-  .photos-list__item-featured .photos-list__wrapper {
+  .photos-list__item-featured .photos-list__overview-wrapper {
     min-width: 580px;
   }
 
   .photos-list__item:not(:first-of-type) {
     padding: 0;
+  }
+
+  .photos-list__item {
+    display: block;
   }
 
   .photos-list__image-small {
@@ -133,29 +148,29 @@
 
   .photos-list__image-small--featured {
     width: 660px;
-    margin-left: -20px;
   }
 
 }
 
 @media (min-width: $desktop-width) {
   .photos-list {
-    justify-content: space-between;
-    padding: 0;
+    width: 960px;
   }
 
   .photos-list__item {
     margin-right: 0;
   }
 
-  .photos-list .photos-list__item-featured {
+  .photos-list .photos-list__item-featured,
+  .photos-list__featured-description  {
     padding: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 
-
-  .photos-list__item-featured .photos-list__wrapper {
+  .photos-list__item-featured .photos-list__overview-wrapper {
     min-height: 130px;
-    width: 900px;
+    width: 920px;
     margin: 0;
 
     &:first-of-type {
@@ -164,10 +179,10 @@
   }
 
   .photos-list__item-featured .photos-list__image-small--featured {
-    width: 940px;
+    width: 960px;
   }
 
   .photos-list__item-featured .photos-list__image-full-featured {
-    width: 940px;
+    width: 960px;
   }
 }
