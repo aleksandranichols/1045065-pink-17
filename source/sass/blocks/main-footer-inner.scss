@@ -21,6 +21,10 @@
   }
 }
 
+.main-footer-inner__footer--desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-footer-inner {
     padding: 40px 20px;
@@ -33,7 +37,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .main-footer-inner {
     width: 100%;
@@ -42,5 +45,13 @@
   .main-footer-inner__logolink,
   .main-footer-inner__socials {
     margin-right: 220px;
+  }
+
+  .main-footer-inner__footer--mobile {
+    display: none;
+  }
+
+  .main-footer-inner__footer--desktop {
+    display: block;
   }
 }

@@ -15,6 +15,7 @@
   }
 
   &:active path {
+    fill: $darkblue-color;
     opacity: 0.3;
   }
 }
@@ -23,6 +24,21 @@
   .main-footer {
     padding: 40px 20px;
     display: block;
+  }
+
+  .main-footer__footer--mobile {
+    &:hover path,
+    &:focus path {
+      fill: $lipstick-color;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
+  }
+
+  .main-footer__footer--desktop {
+    display: none;
   }
 
   .main-footer__logolink,
@@ -35,6 +51,14 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     width: 100%;
+  }
+
+  .main-footer__footer--mobile {
+    display: none;
+  }
+
+  .main-footer__footer--desktop {
+    display: block;
   }
 
   .main-footer__logolink,

@@ -37,7 +37,7 @@
 .socials-list__twitter::before {
   content: " ";
   position: absolute;
-  background-image: url("/img/icon-twitter.svg");
+  background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
   height: 18px;
   width: 18px;
@@ -48,7 +48,7 @@
 .socials-list__facebook::before {
   content: " ";
   position: absolute;
-  background-image: url("/img/icon-facebook.svg");
+  background-image: url("../img/icon-facebook.svg");
   background-repeat: no-repeat;
   height: 20px;
   width: 9px;
@@ -59,7 +59,7 @@
 .socials-list__youtube::before {
   content: " ";
   position: absolute;
-  background-image: url("/img/icon-youtube.svg");
+  background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   height: 15px;
   width: 15px;

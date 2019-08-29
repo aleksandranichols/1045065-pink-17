@@ -14,7 +14,8 @@
   z-index: 1;
 }
 
-.main-header--opened {
+.main-header--opened,
+.main-header--nojs {
   position: relative;
   margin-bottom: -80px;
   z-index: 1;

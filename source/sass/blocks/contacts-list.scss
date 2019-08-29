@@ -1,0 +1,33 @@
+.contacts-list {
+  @include list-clear;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+  padding: 0 20px;
+}
+
+.contacts-list__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-list p {
+  margin: 0;
+  text-align: center;
+}
+
+.contacts-list__action {
+  font-weight: bold;
+  font-size: 18px;
+  color: $darkblue-color;
+}
+
+.contacts-list__details {
+  font-size: 24px;
+  font-weight: 300;
+  color: $lipstick-color;
+}
