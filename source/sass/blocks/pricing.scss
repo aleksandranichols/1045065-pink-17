@@ -1,0 +1,13 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__pricing-table {
+  margin-bottom: 40px;
+}
+
+.pricing__slider-controls label {
+  border: solid 3px rgb(242, 242, 242);
+}

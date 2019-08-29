@@ -3,6 +3,7 @@
 @import "variables.scss";
 @import "scaffolding.scss";
 @import "blocks/button.scss";
+@import "blocks/slider-controls.scss";
 @import "blocks/main-page.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-content.scss";
@@ -17,10 +18,15 @@
 @import "blocks/photos.scss";
 @import "blocks/photos-list.scss";
 @import "blocks/socials-list.scss";
+@import "blocks/testimonials-list.scss";
+@import "blocks/contacts-list.scss";
 @import "blocks/downloads.scss";
 @import "blocks/advantages.scss";
 @import "blocks/effects.scss";
-@import "blocks/slider.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/pricing.scss";
+@import "blocks/pricing-table.scss";
+@import "blocks/contacts.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/main-footer-inner.scss";
 @import "blocks/copyright.scss";

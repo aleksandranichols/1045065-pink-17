@@ -1,0 +1,26 @@
+.slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  vertical-align: top;
+  margin-right: 20px;
+  background-color: transparentize($darkblue-color, 0.3);
+  border: solid 3px $white-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $darkblue-color;
+  }
+
+  &:active {
+    background-color: transparent;
+    border: solid 3px $darkblue-color;
+  }
+}

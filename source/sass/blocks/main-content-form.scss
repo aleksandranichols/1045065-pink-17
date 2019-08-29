@@ -6,7 +6,7 @@
   display: block;
   background: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 10px;
   font-size: 24px;
   color: $white-color;
   font-weight: 300;
@@ -17,25 +17,48 @@
   padding-top: 100px;
   padding-bottom: 50px;
   min-height: 80px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+    background-position: center 10px;
+  }
 }
 
 .main-content-form__current-page p {
   margin: 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .main-content-form__current-page {
     background: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center 40px;
     font-size: 50px;
     line-height: 60px;
     padding-top: 150px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+      background-position: center 40px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-content-form__current-page {
     background: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 50px;
+    background-size: cover;
     padding: 200px 130px 100px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+      background-position: center 50px;
+    }
   }
 
   .main-content-form__current-page p {
