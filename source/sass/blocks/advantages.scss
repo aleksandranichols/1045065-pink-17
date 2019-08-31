@@ -160,19 +160,22 @@
     line-height: 30px;
   }
 
+  .advantages picture {
+    margin-right: 55px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
   .advantages__photo-sample {
     width: 265px;
     height: 300px;
-    margin-right: 65px;
 
     &:first-child,
     &:nth-of-type(2) {
       display: inline-block;
       vertical-align: middle;
-    }
-
-    &:last-child {
-      margin-right: 0;
     }
   }
 }
