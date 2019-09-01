@@ -8,16 +8,21 @@
 
 .main-footer__logolink {
   display: block;
+  color: $darkblue-color;
 
-  &:hover path,
-  &:focus path {
-    fill: $lipstick-color;
+  &:hover,
+  &:focus {
+    color: $lipstick-color;
   }
 
-  &:active path {
-    fill: $darkblue-color;
+  &:active {
+    color: $darkblue-color;
     opacity: 0.3;
   }
+}
+
+.main-footer__logolink use:first-of-type {
+  color: $lipstick-color;
 }
 
 @media (min-width: $tablet-width) {

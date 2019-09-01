@@ -12,13 +12,15 @@
 }
 
 .copyright__htmlacademy-link {
-  &:hover path,
-  &:focus path {
-    fill: $darkblue-color;
+  color: $lipstick-color;
+
+  &:hover,
+  &:focus {
+    color: $darkblue-color;
   }
 
-  &:active path {
-    fill: $darkblue-color;
+  &:active {
+    color: $darkblue-color;
     opacity: 0.3;
   }
 }

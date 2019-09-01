@@ -29,6 +29,7 @@
   display: none;
 }
 
+
 @media (min-width: $tablet-width) {
   .main-header {
     min-height: 110px;
@@ -39,6 +40,12 @@
   }
 
   .main-header__logo-image-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header--opened {
     display: none;
   }
 }

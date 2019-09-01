@@ -9,16 +9,21 @@
 
 .main-footer-inner__logolink {
   display: block;
-  margin-bottom: 40px;
+  color: $darkblue-color;
 
-  &:hover path,
-  &:focus path {
-    fill: $lipstick-color;
+  &:hover,
+  &:focus {
+    color: $lipstick-color;
   }
 
-  &:active path {
+  &:active {
+    color: $darkblue-color;
     opacity: 0.3;
   }
+}
+
+.main-footer-inner__logolink use:first-of-type {
+  color: $lipstick-color;
 }
 
 .main-footer-inner__footer--desktop {
