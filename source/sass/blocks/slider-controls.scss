@@ -4,7 +4,7 @@
   height: 6px;
   font-size: 0;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 12px;
   background-color: transparentize($darkblue-color, 0.3);
   border: solid 3px $white-color;
   border-radius: 50%;
@@ -16,11 +16,10 @@
 
   &:hover,
   &:focus {
-    background-color: $darkblue-color;
+    opacity: 0.6;
   }
 
   &:active {
-    background-color: transparent;
-    border: solid 3px $darkblue-color;
+    opacity: 0.1;
   }
 }

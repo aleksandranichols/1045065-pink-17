@@ -17,7 +17,7 @@
 .main-header--opened,
 .main-header--nojs {
   position: relative;
-  margin-bottom: -80px;
+  margin-bottom: -120px;
   z-index: 1;
 }
 
@@ -40,12 +40,6 @@
   }
 
   .main-header__logo-image-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header--opened {
     display: none;
   }
 }

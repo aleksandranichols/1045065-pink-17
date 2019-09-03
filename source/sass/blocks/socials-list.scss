@@ -8,15 +8,15 @@
 .socials-list__item a {
   @include a-clear;
   display: block;
-  height: 40px;
-  width: 40px;
+  height: 42px;
+  width: 42px;
 }
 
 .socials-list__item {
   position: relative;
-  height: 40px;
-  width: 40px;
-  margin-right: 12px;
+  height: 43px;
+  width: 43px;
+  margin-right: 15px;
   border: 3px solid rgb(233, 235, 236);
   border-radius: 50%;
 

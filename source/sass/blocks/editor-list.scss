@@ -1,0 +1,214 @@
+.editor-list {
+  @include list-clear;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 115px;
+}
+
+.editor-list__editor-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.editor-list__svg-wrapper {
+  color: $darkblue-color;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $darkblue-color;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $lipstick-color;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.editor-list__svg-wrapper--active {
+  color: $lipstick-color;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.editor-list__range-button-crop,
+.editor-list__range-button-fill,
+.editor-list__range-button-contrast {
+  position: absolute;
+  padding: 0;
+  font-size: 0;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  background-color: $white-color;
+  border: 2px solid $lipstick-color;
+  border-radius: 50%;
+  cursor: pointer;
+  right: -130px;
+  bottom: -35px;
+
+  &:hover,
+  &:focus {
+    background-color: $lipstick-color;
+    cursor: pointer;
+  }
+}
+
+.editor-list__editor-item-crop::after,
+.editor-list__editor-item-fill::after,
+.editor-list__editor-item-contrast::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 2px;
+  background-color: $darkblue-color;
+  left: -30px;
+  bottom: -30px;
+}
+
+.editor-list__highlight {
+  position: relative;
+}
+
+.editor-list__highlight-crop::after,
+.editor-list__highlight-fill::after,
+.editor-list__highlight-contrast::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: $lightgray-color;
+  bottom: -70px;
+  left: -65px;
+}
+
+.editor-list__range-button-fill,
+.editor-list__range-button-contrast,
+.editor-list__editor-item-fill::after,
+.editor-list__editor-item-contrast::after,
+.editor-list__highlight-fill::after,
+.editor-list__highlight-contrast::after {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .editor-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 45px;
+  }
+
+  .editor-list__formatting-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .editor-list__svg-wrapper {
+    color: $lipstick-color;
+    opacity: 1;
+  }
+
+  .editor-list__editor-item {
+    margin-bottom: 35px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .editor-list__formatting-wrapper svg {
+    transform: scale(0.69);
+  }
+
+  .editor-list__range-button-fill,
+  .editor-list__range-button-contrast,
+  .editor-list__editor-item-fill::after,
+  .editor-list__editor-item-contrast::after,
+  .editor-list__highlight-fill::after,
+  .editor-list__highlight-contrast::after {
+    display: block;
+  }
+
+  .editor-list__highlight-crop::after,
+  .editor-list__highlight-fill::after,
+  .editor-list__highlight-contrast::after {
+    width: 270px;
+    bottom: -25px;
+    left: 0;
+  }
+
+  .editor-list__editor-item-crop::after,
+  .editor-list__editor-item-fill::after,
+  .editor-list__editor-item-contrast::after {
+    width: 200px;
+    left: 60px;
+    bottom: 20px;
+  }
+
+  .editor-list__range-button-crop {
+    right: -180px;
+    bottom: 15px;
+  }
+
+  .editor-list__range-button-fill {
+    right: -50px;
+    bottom: 15px;
+  }
+
+  .editor-list__range-button-contrast {
+    right: -100px;
+    bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editor-list__editor-item {
+    margin-bottom: 20px;
+  }
+
+  .editor-list__editor-item-crop::after,
+  .editor-list__editor-item-fill::after,
+  .editor-list__editor-item-contrast::after {
+    width: 290px;
+    left: 110px;
+    bottom: 30px;
+  }
+
+  .editor-list__formatting-wrapper svg {
+    transform: scale(1);
+  }
+
+  .editor-list__range-button-crop {
+    right: -150px;
+    bottom: 25px;
+  }
+
+  .editor-list__range-button-fill {
+    right: -320px;
+    bottom: 25px;
+  }
+
+  .editor-list__range-button-contrast {
+    right: -250px;
+    bottom: 25px;
+  }
+
+  .editor-list__highlight-contrast::after,
+  .editor-list__highlight-crop::after,
+  .editor-list__highlight-fill::after {
+    width: 410px;
+    bottom: -5px;
+    left: 0;
+  }
+}

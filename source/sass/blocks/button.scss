@@ -1,6 +1,6 @@
 .button {
   @include a-clear;
-  @include button(20px, 36px, 17px, 36px, 3px solid rgb(255, 255, 255), 35px);
+  @include button(18px, 36px, 16px, 36px, 3px solid rgb(255, 255, 255), 35px);
   cursor: pointer;
   font-size: 18px;
   line-height: 18px;

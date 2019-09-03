@@ -1,0 +1,63 @@
+.item-submit {
+  background: $white-color;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $white-color;
+}
+
+.item-submit__button {
+  background-color: rgb(42, 171, 109);
+  color: $white-color;
+  border: none;
+  width: 280px;
+  margin-bottom: 35px;
+  padding: 25px 0 25px;
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: rgb(28, 155, 94);
+  }
+
+  &:active {
+    background-color: rgb(28, 155, 94);
+    color: transparentize($white-color, 0.3);
+  }
+
+  &:disabled {
+    color: $white-color;
+    background-color: $lightgray-color;
+  }
+}
+
+.item-submit p {
+  margin: 0;
+  color: $darkblue-color;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.item-submit span {
+  color: $lipstick-color;
+}
+
+@media (min-width: $tablet-width) {
+  .item-submit {
+    order: -2;
+  }
+
+  .item-submit .main-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .item-submit__button {
+    margin-right: 130px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}

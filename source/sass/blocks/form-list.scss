@@ -1,0 +1,64 @@
+.form-list {
+  @include list-clear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-list__item-text {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.form-list__item-checkbox {
+  padding: 30px 20px 0;
+  margin-bottom: 40px;
+}
+
+.form-list__item-email-tel {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.form-list__item-radio {
+  padding: 30px 20px 0;
+  margin-bottom: 35px;
+}
+
+.form-list__item-textarea {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.form-list__item-submit {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list {
+    flex-direction: column-reverse;
+  }
+
+  .form-list__item-text {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .form-list__item-radio {
+    margin-bottom: 50px;
+  }
+
+  .form-list__item-email-tel {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .form-list__item-checkbox {
+    margin-bottom: 55px;
+  }
+
+  .form-list__item-textarea {
+    margin-bottom: 65px;
+  }
+}

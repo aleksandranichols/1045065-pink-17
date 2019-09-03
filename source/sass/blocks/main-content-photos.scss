@@ -3,6 +3,10 @@
   background-color: $white-background;
 }
 
+.main-content-photos__photos {
+  margin-bottom: 45px;
+}
+
 .main-content-photos__current-page {
   display: block;
   background: url("../img/bg-back-mobile@1x.jpg");
@@ -28,7 +32,12 @@
 
 .main-content-photos__current-page p {
   margin: 0;
+  padding-top: 50px;
   text-align: center;
+}
+
+.main-content-photos__post {
+  padding-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,6 +55,10 @@
       background-size: cover;
       background-position: center 40px;
     }
+  }
+
+  .main-content-photos__post {
+    padding-bottom: 0;
   }
 }
 

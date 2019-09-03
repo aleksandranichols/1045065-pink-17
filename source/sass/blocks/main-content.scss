@@ -7,8 +7,8 @@
   background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(242, 242, 242, 1) 25%, rgba(242, 242, 242, 1) 100%);
 }
 
-.main-content__background-wrapper--stop-points-50 {
-  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 100%);
+.main-content__background-wrapper--stop-points-45 {
+  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%, rgba(242, 242, 242, 1) 100%);
 }
 
 .main-content__slogan {
@@ -25,16 +25,16 @@
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 10px;
+  background-position: center 40px;
   background-size: cover;
   height: 362px;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 150px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: cover;
-    background-position: center 6px;
+    background-position: center 40px;
   }
 }
 
@@ -59,7 +59,7 @@
   position: relative;
   z-index: 1;
   padding: 40px 20px 0;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 }
 
 .main-content__pricing {
@@ -67,12 +67,17 @@
 }
 
 .main-content__contacts {
-  padding-top: 50px;
+  padding-top: 45px;
+}
+
+.main-content-photos__post {
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-content__testimonials {
     padding-top: 0;
+    margin-bottom: 95px;
   }
 
   .main-content__background-wrapper {
@@ -84,7 +89,7 @@
   }
 
   .main-content__background-wrapper--stop-points-50 {
-    background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 65%, rgba(242, 242, 242, 1) 65%, rgba(242, 242, 242, 1) 100%);
+    background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 100%);
   }
 
   .main-content__downloads-wrapper {
@@ -96,7 +101,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 650px;
+    height: 690px;
     padding-top: 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -122,7 +127,7 @@
   .main-content__photo-sample {
     background-image: none;
     width: 660px;
-    padding-top: 120px;
+    padding-top: 165px;
   }
 
   .main-content__photo-sample::after {
@@ -132,7 +137,7 @@
     background-repeat: no-repeat;
     width: 660px;
     height: 650px;
-    top: 52px;
+    top: 95px;
     left: 10px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -160,10 +165,10 @@
 @media (min-width: $desktop-width) {
   .main-content__downloads-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center -10px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 850px;
+    height: 870px;
     padding-top: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -174,7 +179,7 @@
   }
 
   .main-content__photo-sample {
-    padding-top: 160px;
+    padding-top: 225px;
   }
 
   .main-content__photo-sample::after {
@@ -204,11 +209,15 @@
   .main-content__slogan {
     font-size: 50px;
     line-height: 70px;
-    width: 300px;
+    width: 200px;
     padding: 0;
   }
 
   .main-content__testimonials {
     margin: 0;
+  }
+
+  .main-content__contacts {
+    margin-right: -20px;
   }
 }

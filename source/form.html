@@ -3,8 +3,18 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="format-detection" content="telephone=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>HTML Academy: Пинк</title>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style.min.css">
+      <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+      <script src="js/picturefill.min.js" async></script>
+      <script defer src="js/svgxuse.min.js"></script>
     </head>
     <body class="main-page">
       <header class="main-header main-header--closed main-header--nojs">
@@ -48,6 +58,139 @@
             <p>Конкурс на самое безбашенное путешествие с Пинк</p>
           </div>
         </div>
+        <section class="main-content-form__form form">
+          <header class="form__header">
+            <h2 class="visually-hidden">Форма для заполнения на конкурс</h2>
+            <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <p>Пожалуйста, заполните форму ниже:</p>
+          </header>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <ul class="form__form-list form-list">
+              <li class="form-list__item-text item-text">
+                <div class="main-container">
+                  <h3 class="visually-hidden">Ввод личных данных</h3>
+                  <p>
+                    <label for="last_name">Фамилия:</label>
+                    <input id="last_name" type="text" name="last_name" placeholder="Укажите фамилию *" required>
+                  </p>
+                  <p>
+                    <label for="first_name">Имя:</label>
+                    <input id="first_name" type="text" name="first_name" placeholder="Введите ваше имя *" required>
+                  </p>
+                  <p>
+                    <label for="middle_name">Отчество:</label>
+                    <input id="middle_name" type="text" name="middle_name" placeholder="Ну и отчество тоже">
+                  </p>
+                </div>
+              </li>
+              <li class="form-list__item-checkbox item-checkbox">
+                <div class="main-container">
+                  <h3 class="visually-hidden">Ваши достижения</h3>
+                  <fieldset>
+                    <legend>Ваши безбашенные достижения в путешествии</legend>
+                    <div>
+                      <div class="item-checkbox__wrapper">
+                        <input id="selfie-with-shark" type="checkbox" name="selfie-with-shark" checked>
+                        <span class="item-checkbox__checkbox"></span>
+                        <label class="item-checkbox__not-checked" for="selfie-with-shark">Сделал селфи с акулой</label>
+                        <label class="item-checkbox__checked" for="selfie-with-shark">Сделал</label>
+                      </div>
+                      <div class="item-checkbox__wrapper">
+                        <input id="sunburn" type="checkbox" name="sunburn" checked>
+                        <span class="item-checkbox__checkbox"></span>
+                        <label class="item-checkbox__not-checked" for="sunburn">Обгорел на пляже</label>
+                        <label class="item-checkbox__checked" for="sunburn">Сделал</label>
+                      </div>
+                      <div class="item-checkbox__wrapper">
+                        <input id="met-with-norris" type="checkbox" name="met-with-norris">
+                        <span class="item-checkbox__checkbox"></span>
+                        <label class="item-checkbox__not-checked" for="met-with-norris">Видел Чака Норриса</label>
+                        <label class="item-checkbox__checked" for="met-with-norris">Сделал</label>
+                      </div>
+                      <div class="item-checkbox__wrapper">
+                        <input id="souvenirs" type="checkbox" name="souvenirs">
+                        <span class="item-checkbox__checkbox"></span>
+                        <label class="item-checkbox__not-checked" for="souvenirs">Накупил сувениров</label>
+                        <label class="item-checkbox__checked" for="souvenirs">Сделал</label>
+                      </div>
+                      <div class="item-checkbox__wrapper">
+                        <input id="hold-fortress" type="checkbox" name="hold-fortress" checked>
+                        <span class="item-checkbox__checkbox"></span>
+                        <label class="item-checkbox__not-checked" for="hold-fortress">Удержал башню</label>
+                        <label class="item-checkbox__checked" for="hold-fortress">Сделал</label>
+                      </div>
+                      <div class="item-checkbox__wrapper">
+                        <input id="hotel-mess" type="checkbox" name="hotel-mess">
+                        <span class="item-checkbox__checkbox"></span>
+                        <label class="item-checkbox__not-checked" for="hotel-mess">Разгромил отель</label>
+                        <label class="item-checkbox__checked" for="hotel-mess">Сделал</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </li>
+              <li class="form-list__item-email-tel item-email-tel">
+                <div class="main-container">
+                  <fieldset>
+                    <legend>Контактная информация</legend>
+                    <div class="item-email-tel__contacts-wrapper">
+                      <label for="tel">Номер телефона</label>
+                      <div class="item-email-tel__input-wrapper">
+                        <input class="item-email-tel__phone" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                        <span class="item-email-tel__grayblock-1"></span>
+                      </div>
+                    </div>
+                    <div class="item-email-tel__contacts-wrapper">
+                      <label for="email">Адрес почты</label>
+                      <div class="item-email-tel__input-wrapper">
+                        <input class="item-email-tel__email" id="email" type="email" name="email" placeholder="Введите почту *" required>
+                        <span class="item-email-tel__grayblock-2"></span>
+                      </div>
+                    </div>
+                </fieldset>
+                </div>
+              </li>
+              <li class="form-list__item-radio item-radio">
+                <div class="main-container">
+                  <fieldset>
+                    <legend>С каким приложением путешествовали?</legend>
+                      <div class="item-radio__wrapper">
+                        <input id="iOS" type="radio" name="OS" checked>
+                        <span class="item-radio__checkmark"></span>
+                        <label for="iOS">Pink для iOS</label>
+                      </div>
+                      <div class="item-radio__wrapper">
+                        <input id="Android" type="radio" name="OS">
+                        <span class="item-radio__checkmark"></span>
+                        <label for="Android">Pink на Android</label>
+                      </div>
+                      <div class="item-radio__wrapper">
+                        <input id="Windows" type="radio" name="OS">
+                        <span class="item-radio__checkmark"></span>
+                        <label for="Windows">Windows Phone</label>
+                      </div>
+                  </fieldset>
+                </div>
+              </li>
+              <li class="form-list__item-textarea item-textarea">
+                <div class="main-container">
+                  <fieldset>
+                    <legend>
+                      <label for="emotions">Опишите свои эмоции</label>
+                    </legend>
+                    <textarea id="emotions" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
+                </fieldset>
+                </div>
+              </li>
+              <li class="form-list__item-submit item-submit">
+                <div class="main-container">
+                  <button class="item-submit__button button" type="submit" aria-label="Отправить форму">Отправить форму</button>
+                  <p><span>*</span> — обязательные поля</p>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </section>
       </main>
       <footer class="main-footer-inner">
         <div class="footer-container">
@@ -79,6 +222,18 @@
           </div>
         </div>
       </footer>
+      <section class="main-content-form__confirmation-modal confirmation-modal">
+        <h2 class="visually-hidden">Подтверждение отправки формы</h2>
+          <h3>Ваша заявка отправлена</h3>
+          <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <button class="confirmation-modal__button button" type="button" aria-label="Закрыть окно">Закрыть окно</button>
+      </section>
+      <section class="main-content-form__error-modal error-modal">
+        <h2 class="visually-hidden">Ошибка при отправке формы</h2>
+          <h3>Что-то пошло не так!</h3>
+          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="error-modal__button button" type="button" aria-label="Закрыть окно">Ок</button>
+      </section>
       <script src="js/script.js"></script>
     </body>
   </html>
