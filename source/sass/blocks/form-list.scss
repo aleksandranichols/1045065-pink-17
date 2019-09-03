@@ -2,12 +2,11 @@
   @include list-clear;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .form-list__item-text {
-  padding: 0 20px;
   margin-bottom: 40px;
+  padding: 0 20px;
 }
 
 .form-list__item-checkbox {
@@ -16,8 +15,8 @@
 }
 
 .form-list__item-email-tel {
-  padding: 0 20px;
   margin-bottom: 40px;
+  padding: 0 20px;
 }
 
 .form-list__item-radio {
@@ -31,8 +30,9 @@
 }
 
 .form-list__item-submit {
-  padding: 0 20px;
   margin-bottom: 40px;
+  padding: 0 20px;
+  align-self: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,7 +41,6 @@
   }
 
   .form-list__item-text {
-    padding: 0;
     margin-bottom: 30px;
   }
 
@@ -50,7 +49,6 @@
   }
 
   .form-list__item-email-tel {
-    padding: 0;
     margin-bottom: 20px;
   }
 

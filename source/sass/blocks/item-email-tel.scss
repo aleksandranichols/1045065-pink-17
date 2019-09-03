@@ -12,6 +12,12 @@
   display: none;
 }
 
+.item-email-tel fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .item-email-tel .item-email-tel__contacts-wrapper {
   display: flex;
   flex-direction: column;
@@ -101,7 +107,8 @@
     width: 20px;
     height: 19px;
     background-image: url("../img/icon-phone.svg");
-    right: 0;
+    right: 19px;
+    top: 17px;
   }
 
   .item-email-tel__grayblock-2::after {
@@ -109,7 +116,8 @@
     position: absolute;
     width: 18px;
     height: 13px;
-    background-image: url("../img/icon-email.svg");
-    right: 0;
+    background-image: url("../img/icon-mail.svg");
+    right: 20px;
+    top: 20px;
   }
 }

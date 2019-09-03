@@ -12,6 +12,12 @@
   padding-left: 20px;
 }
 
+.item-textarea fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .item-textarea textarea {
   width: 230px;
   height: 160px;
