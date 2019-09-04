@@ -133,7 +133,7 @@
 
 @media (min-width: $tablet-width) {
   .main-navigation__logo-wrapper {
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
 
   .main-navigation__logo-image {
@@ -157,7 +157,7 @@
   }
 
   .main-navigation--closed .main-navigation__toggle::before {
-    top: 55px;
+    top: 45px;
   }
 
   .main-navigation--opened .main-navigation__toggle::before,
@@ -170,11 +170,11 @@
   .main-navigation__wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 
   .main-navigation__logo-wrapper {
-    padding: 40px 0;
+    padding: 40px 0 20px;
+    margin-right: 33px;
   }
 
   .main-navigation {
@@ -182,8 +182,7 @@
     min-height: 110px;
   }
 
-  .main-navigation--opened .main-navigation__navigation-list,
-  .main-navigation--opened {
+  .main-navigation--nojs .main-navigation__navigation-list {
     display: none;
   }
 

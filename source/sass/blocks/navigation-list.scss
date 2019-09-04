@@ -12,7 +12,7 @@
   }
 
   &:active {
-    color: transparentize($lipstick-color, 0.3);
+    color: transparentize($white-color, 0.3);
   }
 
   &:nth-of-type(odd) {
@@ -31,22 +31,23 @@
   @include navigation-item-paddings;
 
   &:hover,
-  &:focus-within {
+  &:focus {
     color: $lipstick-color;
   }
 
   &:active {
-    color: transparentize($lipstick-color, 0.3);
+    color: transparentize($white-color, 0.3);
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation-list {
     display: flex;
-    width: 650px;
-    align-items: center;
+    width: 640px;
+    align-items: flex-end;
     font-weight: normal;
     text-transform: none;
+    margin-bottom: 25px;
   }
 
   .navigation-list__navigation-item {
@@ -74,13 +75,12 @@
   }
 
   .navigation-list__navigation-item--current {
-    padding: 0;
     border-bottom: 2px solid $white-color;
 
     &:hover,
     &:focus,
     &:active {
-      border: none;
+      border-bottom: 2px solid transparent;
     }
   }
 }

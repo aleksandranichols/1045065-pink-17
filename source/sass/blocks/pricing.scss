@@ -4,10 +4,30 @@
   align-items: center;
 }
 
+.pricing__pricing-table-wrapper {
+  overflow: hidden;
+}
+
 .pricing__pricing-table {
   margin-bottom: 40px;
+  margin-right: 280px;
 }
 
 .pricing__slider-controls label {
   border: solid 3px rgb(242, 242, 242);
+
+  &:nth-of-type(2) {
+    background-color: transparent;
+    border: solid 3px $darkblue-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pricing__slider-controls {
+    display: none;
+  }
+
+  .pricing__pricing-table {
+    margin-right: 0;
+  }
 }

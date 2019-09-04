@@ -3,63 +3,85 @@
   background-color: $white-background;
 }
 
+.main-content-photos__photos {
+  margin-bottom: 45px;
+}
+
 .main-content-photos__current-page {
   display: block;
   background: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
-  background-position: center 10px;
+  background-position: center;
   font-size: 24px;
   color: $white-color;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 50px;
-  padding-right: 45px;
+  padding-right: 50px;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   min-height: 80px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-back-mobile@2x.jpg");
     background-size: cover;
-    background-position: center 10px;
+    background-position: center;
   }
 }
 
 .main-content-photos__current-page p {
   margin: 0;
+  padding-top: 40px;
   text-align: center;
+}
+
+.main-content-photos__post {
+  padding-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .main-content-photos__current-page {
     background: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
-    background-position: center 40px;
+    background-position: center;
     font-size: 50px;
     line-height: 60px;
     padding-top: 150px;
-    height: 230px;
+    height: 225px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-back-tablet@2x.jpg");
       background-size: cover;
-      background-position: center 40px;
+      background-position: center;
     }
+  }
+
+  .main-content-photos__post {
+    padding-bottom: 0;
+  }
+
+  .main-content-photos__photos {
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-content-photos__current-page {
     background: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 50px;
+    background-position: center;
     background-size: cover;
     padding: 200px 130px 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-back-desktop@2x.jpg");
       background-size: cover;
-      background-position: center 50px;
+      background-position: center;
     }
+  }
+
+  .main-content-photos__current-page p {
+    padding: 0 20px;
+    width: 560px;
   }
 }

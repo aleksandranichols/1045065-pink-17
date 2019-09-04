@@ -70,6 +70,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
   gulp.watch("source/img/*.{png,jpg}", gulp.series("webp", "refresh"));
+  gulp.watch("source/img/*.svg", gulp.series("refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh")).on("change", server.reload);
 });
 

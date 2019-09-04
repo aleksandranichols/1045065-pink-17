@@ -1,17 +1,9 @@
-// #feedback-1:checked ~ .testimonials-list__item #slide1,
-// #feedback-2:checked ~ .testimonials-list__item #slide2,
-// #feedback-3:checked ~ .testimonials-list__item #slide3 {
-//   display: block;
-// }
-//
-// #feedback-1:checked ~ .testimonials-list__item label[for="feedback-1"],
-// #feedback-2:checked ~ .testimonials-list__item label[for="feedback-2"],
-// #feedback-3:checked ~ .testimonials-list__item label[for="feedback-3"] {
-//   background-color: #ffffff;
-// }
-
 .testimonials-list {
   @include list-clear;
+}
+
+.testimonials-list__item:nth-of-type(n+2) {
+  display: none;
 }
 
 .testimonials-list__author,
@@ -23,13 +15,13 @@
 
 .testimonials-list blockquote {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .testimonials-list__author {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .testimonials-list__author-details {
@@ -50,7 +42,7 @@
     font-size: 20px;
     line-height: 30px;
     color: $black-color;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .testimonials-list__quote {
@@ -58,6 +50,78 @@
     line-height: 30px;
     color: $black-color;
     order: -1;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .testimonials-list__item {
+    position: relative;
+    padding-top: 180px;
+  }
+
+  .testimonials-list__item::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 64px;
+    top: 60px;
+    left: 320px;
+  }
+
+  .testimonials-list__quote {
+    width: 700px;
+    text-align: center;
+  }
+
+  .testimonials-list__quote::before {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    background: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 41px;
+    opacity: 0.3;
+    bottom: 130px;
+    left: -100px;
+  }
+
+  .testimonials-list__quote:hover::before,
+  .testimonials-list__quote:focus::before,
+  .testimonials-list__quote:hover::after,
+  .testimonials-list__quote:focus::after {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  .testimonials-list__quote:active::before,
+  .testimonials-list__quote:active::after {
+    cursor: pointer;
+    opacity: 0.1;
+  }
+
+  .testimonials-list__quote::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    background: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 41px;
+    opacity: 0.3;
+    right: -100px;
+    bottom: 130px;
+  }
+
+  .testimonials-list__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .testimonials-list__author-details {
+    font-size: 18px;
   }
 }

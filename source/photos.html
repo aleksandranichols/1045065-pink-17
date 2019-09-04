@@ -3,8 +3,16 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="format-detection" content="telephone=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>HTML Academy: Пинк</title>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style.min.css">
+      <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     </head>
     <body class="main-page">
       <header class="main-header main-header--closed main-header--nojs">
@@ -91,10 +99,14 @@
                   </picture>
                 </a>
                 <div class="photos-list__overview-wrapper">
-                  <p class="photos-list__author">Левон</p>
-                  <p class="photos-list__time-posted">(5 часов назад)</p>
-                  <p class="photos-list__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <p class="photos-list__likes">Нравится: 356</p>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__author">Левон</p>
+                    <p class="photos-list__time-posted">(5 часов назад)</p>
+                    <p class="photos-list__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  </div>
+                  <div class="photos-list__overview-wrapper-bottom">
+                    <p class="photos-list__likes">Нравится: 356</p>
+                  </div>
                 </div>
               </li>
               <li class="photos-list__item">
@@ -109,10 +121,14 @@
                   </picture>
                 </a>
                 <div class="photos-list__overview-wrapper">
-                  <p class="photos-list__author">Антон</p>
-                  <p class="photos-list__time-posted">(12 часов назад)</p>
-                  <p class="photos-list__description">Соседи будут рады!</p>
-                  <p class="photos-list__likes">Нравится: 666</p>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__author">Антон</p>
+                    <p class="photos-list__time-posted">(12 часов назад)</p>
+                    <p class="photos-list__description">Соседи будут рады!</p>
+                  </div>
+                  <div class="photos-list__overview-wrapper-bottom">
+                    <p class="photos-list__likes">Нравится: 666</p>
+                  </div>
                 </div>
               </li>
               <li class="photos-list__item">
@@ -127,10 +143,14 @@
                   </picture>
                 </a>
                 <div class="photos-list__overview-wrapper">
-                  <p class="photos-list__author">Борис</p>
-                  <p class="photos-list__time-posted">(20 часов назад)</p>
-                  <p class="photos-list__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <p class="photos-list__likes">Нравится: 215</p>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__author">Борис</p>
+                    <p class="photos-list__time-posted">(20 часов назад)</p>
+                    <p class="photos-list__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  </div>
+                  <div class="photos-list__overview-wrapper-bottom">
+                    <p class="photos-list__likes">Нравится: 215</p>
+                  </div>
                 </div>
               </li>
               <li class="photos-list__item">
@@ -145,10 +165,14 @@
                   </picture>
                 </a>
                 <div class="photos-list__overview-wrapper">
-                  <p class="photos-list__author">Сергей</p>
-                  <p class="photos-list__time-posted">(25 часов назад)</p>
-                  <p class="photos-list__description">Самая кубанская в мире!</p>
-                  <p class="photos-list__likes">Нравится: 4</p>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__author">Сергей</p>
+                    <p class="photos-list__time-posted">(25 часов назад)</p>
+                    <p class="photos-list__description">Самая кубанская в мире!</p>
+                  </div>
+                  <div class="photos-list__overview-wrapper-bottom">
+                    <p class="photos-list__likes">Нравится: 4</p>
+                  </div>
                 </div>
               </li>
               <li class="photos-list__item">
@@ -163,10 +187,14 @@
                   </picture>
                 </a>
                 <div class="photos-list__overview-wrapper">
-                  <p class="photos-list__author">Максим</p>
-                  <p class="photos-list__time-posted">(40 часов назад)</p>
-                  <p class="photos-list__description">Где снег-то?</p>
-                  <p class="photos-list__likes">Нравится: 150</p>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__author">Максим</p>
+                    <p class="photos-list__time-posted">(40 часов назад)</p>
+                    <p class="photos-list__description">Где снег-то?</p>
+                  </div>
+                  <div class="photos-list__overview-wrapper-bottom">
+                    <p class="photos-list__likes">Нравится: 150</p>
+                  </div>
                 </div>
               </li>
               <li class="photos-list__item">
@@ -181,17 +209,86 @@
                   </picture>
                 </a>
                 <div class="photos-list__overview-wrapper">
-                  <p class="photos-list__author">Надежда</p>
-                  <p class="photos-list__time-posted">(45 часов назад)</p>
-                  <p class="photos-list__description">Всем GM и взаимные лайки!</p>
-                  <p class="photos-list__likes">Нравится: 2560</p>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__author">Надежда</p>
+                    <p class="photos-list__time-posted">(45 часов назад)</p>
+                    <p class="photos-list__description">Всем GM и взаимные лайки!</p>
+                  </div>
+                  <div class="photos-list__overview-wrapper-top">
+                    <p class="photos-list__likes">Нравится: 2560</p>
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
         </section>
+        <section class="main-content-photos__post post">
+          <div class="main-container">
+            <header class="post__header">
+              <h2 class="visually-hidden">Запостить картинку</h2>
+              <p>Затмите их всех!</p>
+              <p>Выкладывайте все, что накопилось в телефоне!</p>
+            </header>
+            <form class="post__editor editor" action="https://echo.htmlacademy.ru" method="get">
+              <a class="editor__image-full" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+                  <img class="editor__image-small" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Увы, это нужно видеть">
+                </picture>
+              </a>
+              <div class="editor__editor-wrapper">
+                <ul class="editor__editor-list editor-list">
+                  <li class="editor-list__editor-item editor-list__editor-item-crop">
+                    <h3 class="visually-hidden">Обрезать</h3>
+                    <div class="editor-list__formatting-wrapper">
+                      <div class="editor-list__svg-wrapper editor-list__svg-wrapper--active">
+                        <svg aria-hidden="true" role="presentation" width="48px" height="48px">
+                          <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                        </svg>
+                      </div>
+                      <button class="editor-list__range-button-crop button" type="button" aria-label="Уровень изменений"></button>
+                    </div>
+                    <span class="editor-list__highlight-crop"></span>
+                  </li>
+                  <li class="editor-list__editor-item editor-list__editor-item-fill">
+                    <h3 class="visually-hidden">Залить</h3>
+                    <div class="editor-list__formatting-wrapper">
+                      <div class="editor-list__svg-wrapper">
+                        <svg aria-hidden="true" role="presentation" width="48px" height="48px">
+                          <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                        </svg>
+                      </div>
+                      <button class="editor-list__range-button-fill button" type="button" aria-label="Уровень изменений"></button>
+                    </div>
+                    <span class="editor-list__highlight-fill"></span>
+                  </li>
+                  <li class="editor-list__editor-item editor-list__editor-item-contrast">
+                    <h3 class="visually-hidden">Поменять контрастность</h3>
+                    <div class="editor-list__formatting-wrapper">
+                      <div class="editor-list__svg-wrapper">
+                        <svg aria-hidden="true" role="presentation" width="31.92px" height="31.92px">
+                          <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                        </svg>
+                      </div>
+                      <button class="editor-list__range-button-contrast button" type="button" aria-label="Уровень изменений"></button>
+                    </div>
+                    <span class="editor-list__highlight-contrast"></span>
+                  </li>
+                </ul>
+                <div class="editor__button-wrapper">
+                  <button class="editor__apply-button button" type="submit" aria-label="Применить фильтры">Запостить</button>
+                  <button class="editor__reset-button button" type="reset" aria-label="Сбросить фильтры">Отмена</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
-      <footer class="main-footer-inner">
+      <footer class="main-footer-inner main-footer-inner__photos">
         <div class="footer-container">
           <a class="main-footer-inner__logolink" href="index.html">
             <svg class="main-footer-inner__logo main-footer-inner__footer--mobile" aria-labelledby="logo-footer-tablet" width="146.3px" height="40.375px">
@@ -221,6 +318,8 @@
           </div>
         </div>
       </footer>
+      <script src="js/picturefill.min.js" async></script>
+      <script defer src="js/svgxuse.min.js"></script>
       <script src="js/script.js"></script>
     </body>
   </html>

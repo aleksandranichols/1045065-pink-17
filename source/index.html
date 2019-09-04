@@ -3,8 +3,16 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="format-detection" content="telephone=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>HTML Academy: Пинк</title>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style.min.css">
+      <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     </head>
     <body class="main-page">
       <header class="main-header main-header--closed main-header--nojs">
@@ -117,7 +125,7 @@
             </div>
           </div>
         </section>
-        <div class="main-content__background-wrapper main-content__background-wrapper--stop-points-50">
+        <div class="main-content__background-wrapper main-content__background-wrapper--stop-points-45">
           <div class="main-container">
             <section class="main-content__testimonials testimonials">
               <input class="visually-hidden" type="radio" id="feedback-1" name="toggle" checked>
@@ -125,16 +133,16 @@
               <input class="visually-hidden" type="radio" id="feedback-3" name="toggle">
               <h2 class="visually-hidden">Отзывы о приложении</h2>
               <ul class="testimonials__testimonials-list testimonials-list">
-                <li class="testimonials-list__item" id="slide1">
+                <li class="testimonials-list__item">
                   <blockquote>
                     <p class="testimonials-list__author">Николай Петров</p>
                     <p class="testimonials-list__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                     <p class="testimonials-list__author-details">25 лет, водитель трамвая</p>
                   </blockquote>
                 </li>
-                <li class="testimonials-list__item" id="slide2">
+                <li class="testimonials-list__item">
                 </li>
-                <li class="testimonials-list__item" id="slide3">
+                <li class="testimonials-list__item">
                 </li>
               </ul>
               <div class="testimonials__slider-controls slider-controls">
@@ -144,42 +152,107 @@
               </div>
             </section>
             <section class="main-content__pricing pricing">
-              <input class="visually-hidden" type="radio" id="pricing-1" name="toggle" checked>
-              <input class="visually-hidden" type="radio" id="pricing-2" name="toggle">
+              <input class="visually-hidden" type="radio" id="pricing-1" name="toggle">
+              <input class="visually-hidden" type="radio" id="pricing-2" name="toggle" checked>
               <input class="visually-hidden" type="radio" id="pricing-3" name="toggle">
-              <table class="pricing__pricing-table pricing-table">
-                <caption class="visually-hidden">Таблица с ценами на подписку</caption>
-                <tr class="pricing-table__subscribtion-type">
-                  <td><td>
-                  <td>База<td>
-                  <td>Стандарт<td>
-                  <td>Анлим<td>
-                </tr>
-                <tr class="pricing-table__subscribtion-price">
-                  <td><td>
-                  <td>1,99 USD<td>
-                  <td>3,99 USD<td>
-                  <td>9,99 USD<td>
-                </tr>
-                <tr>
-                  <td>Розовый фильтр<td>
-                  <td><td>
-                  <td><td>
-                  <td><td>
-                </tr>
-                <tr>
-                  <td>Смайлики<td>
-                  <td><td>
-                  <td><td>
-                  <td><td>
-                </tr>
-                <tr>
-                  <td>Комментарии<td>
-                  <td><td>
-                  <td><td>
-                  <td><td>
-                </tr>
-              </table>
+              <div class="pricing__pricing-table-wrapper">
+                <table class="pricing__pricing-table pricing-table">
+                  <caption class="visually-hidden">Таблица с ценами на подписку</caption>
+                  <tr class="pricing-table__row pricing-table__subscribtion-type">
+                    <th></th>
+                    <th>База</th>
+                    <th class="pricing-table__the-most-popular"><span>Хит</span>Стандарт</th>
+                    <th>Анлим</th>
+                  </tr>
+                  <tr class="pricing-table__row pricing-table__subscribtion-price">
+                    <td></td>
+                    <td>1,99 USD</td>
+                    <td>3,99 USD</td>
+                    <td>9,99 USD</td>
+                  </tr>
+                  <tr class="pricing-table__row">
+                    <td>Розовый фильтр</td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Розовый фильтр</p>
+                        <svg aria-hidden="true" role="presentation" width="31px" height="21px">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Розовый фильтр</p>
+                        <svg aria-hidden="true" role="presentation" width="31px" height="21px">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Розовый фильтр</p>
+                        <svg aria-hidden="true" role="presentation" width="31px" height="21px">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="pricing-table__row">
+                    <td>Смайлики</td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Смайлики</p>
+                        <svg aria-hidden="true" role="presentation" width="26.752px" height="26.752px">
+                          <use xlink:href="img/sprite.svg#icon-no"></use>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Смайлики</p>
+                        <svg aria-hidden="true" role="presentation" width="31px" height="21px">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Смайлики</p>
+                        <svg aria-hidden="true" role="presentation" width="31px" height="21px">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="pricing-table__row">
+                    <td>Комментарии</td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Комментарии</p>
+                        <svg aria-hidden="true" role="presentation" width="26.752px" height="26.752px">
+                          <use xlink:href="img/sprite.svg#icon-no"></use>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Комментарии</p>
+                        <svg aria-hidden="true" role="presentation" width="26.752px" height="26.752px">
+                          <use xlink:href="img/sprite.svg#icon-no"></use>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pricing-table__row-wrapper">
+                        <p>Комментарии</p>
+                        <svg aria-hidden="true" role="presentation" width="31px" height="21px">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <div class="pricing__slider-controls slider-controls">
                 <label for="pricing-1">Первый</label>
                 <label for="pricing-2">Второй</label>
@@ -209,6 +282,7 @@
                 <p class="contacts-list__details">ул. Большая Конюшенная, 19/8</p>
               </li>
             </ul>
+            <span class="contacts__triangle"></span>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20Street%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sus!4v1566743054798!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </section>
@@ -243,6 +317,8 @@
           </div>
         </div>
       </footer>
+      <script src="js/picturefill.min.js" async></script>
+      <script defer src="js/svgxuse.min.js"></script>
       <script src="js/script.js"></script>
     </body>
   </html>
