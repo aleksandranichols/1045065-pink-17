@@ -43,10 +43,11 @@
 @media (min-width: $desktop-width) {
   .navigation-list {
     display: flex;
-    width: 650px;
-    align-items: center;
+    width: 640px;
+    align-items: flex-end;
     font-weight: normal;
     text-transform: none;
+    margin-bottom: 25px;
   }
 
   .navigation-list__navigation-item {

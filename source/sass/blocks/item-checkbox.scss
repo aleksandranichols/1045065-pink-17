@@ -100,3 +100,31 @@ input[type="checkbox"]:checked ~ .item-checkbox__not-checked {
     margin-bottom: 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item-checkbox__options-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 870px;
+  }
+
+  .item-checkbox__wrapper {
+    width: 260px;
+  }
+
+  .item-checkbox fieldset {
+    padding-right: 0;
+    padding-left: 60px;
+    padding-bottom: 10px;
+  }
+
+  .item-checkbox legend {
+    margin-bottom: 40px;
+  }
+}

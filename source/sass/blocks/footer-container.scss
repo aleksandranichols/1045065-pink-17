@@ -21,5 +21,7 @@
   .footer-container {
     max-width: 960px;
     padding: 0 130px;
+    justify-content: none;
+    align-items: flex-end;
   }
 }

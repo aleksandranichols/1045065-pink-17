@@ -9,7 +9,7 @@
 }
 
 .editor__image-full {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .editor__apply-button {
@@ -51,6 +51,12 @@
 @media (min-width: $tablet-width) {
   .editor {
     flex-direction: row;
+    justify-content: space-around;
+    width: 620px;
+  }
+
+  .editor__editor-wrapper {
+    padding: 0 20px;
   }
 
   .editor__button-wrapper {
@@ -65,11 +71,15 @@
   .editor__image-full {
     height: 400px;
     width: 300px;
-    margin-right: 45px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .editor {
+    width: 960px;
+  }
+
   .editor__editor-list {
     margin-bottom: 80px;
   }

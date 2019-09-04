@@ -1,12 +1,15 @@
-.main-container {
+.main-container,
+.main-container-mob {
   width: auto;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
-  .main-container {
+  .main-container,
+  .main-container-mob {
     width: auto;
   }
 
@@ -20,5 +23,18 @@
     position: relative;
     width: 960px;
     padding: 0 130px;
+  }
+
+  .main-container-desk {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .main-container-mob {
+    padding: 0;
+    width: 960px;
   }
 }

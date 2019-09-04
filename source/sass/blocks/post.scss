@@ -1,9 +1,9 @@
 .post {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 12%, rgba(242, 242, 242, 1) 12%, rgba(242, 242, 242, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 14%, rgba(242, 242, 242, 1) 14%, rgba(242, 242, 242, 1) 100%);
 }
 
 .post__header {
-  margin-bottom: 45px;
+  margin-bottom: 65px;
 }
 
 .post__header p {
@@ -23,6 +23,7 @@
   }
 
   .post__header {
-    padding-bottom: 45px;
+    padding-bottom: 60px;
+    margin-bottom: 70px;
   }
 }

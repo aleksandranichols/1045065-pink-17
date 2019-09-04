@@ -1,5 +1,5 @@
 .error-modal {
-  display: none;
+  // display: none;
   position: fixed;
   background: $white-color;
   font-size: 18px;
@@ -7,9 +7,11 @@
   font-weight: normal;
   color: $black-color;
   text-align: center;
-  padding: 0 20px;
-  width: 320px;
+  padding: 20px;
+  width: 280px;
   height: 290px;
+  top: 50%;
+  z-index: 1;
 }
 
 .error-modal h3 {

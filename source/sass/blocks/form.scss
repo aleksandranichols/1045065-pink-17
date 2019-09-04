@@ -44,3 +44,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__header p {
+    width: 850px;
+  }
+
+  .form__header {
+    margin-bottom: 60px;
+  }
+}

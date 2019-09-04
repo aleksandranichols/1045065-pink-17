@@ -99,3 +99,23 @@ input[type="radio"]:checked ~ .item-checkbox__checkbox {
     margin-bottom: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item-radio {
+    display: flex;
+    width: 450px;
+    order: -2;
+    padding: 0;
+  }
+
+  .item-radio fieldset {
+    border: 2px solid $lightgray-color;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+
+  .item-radio legend {
+    margin-bottom: 40px;
+  }
+}

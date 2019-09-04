@@ -59,3 +59,24 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item-textarea {
+    order: 0;
+    width: 960px;
+  }
+
+  .item-textarea textarea {
+    width: 770px;
+    height: 85px;
+  }
+
+  .item-textarea fieldset {
+    padding-left: 40px;
+    padding-bottom: 30px;
+  }
+
+  .item-textarea legend {
+    margin-bottom: 25px;
+  }
+}

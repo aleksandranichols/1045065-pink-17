@@ -59,4 +59,38 @@
   .form-list__item-textarea {
     margin-bottom: 65px;
   }
+
+  .form-list__item-submit {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list {
+    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-list__item-radio {
+    padding: 0;
+  }
+
+  .form-list__item-email-tel {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .form-list__item-checkbox {
+    padding: 0;
+  }
+
+  .form-list__item-textarea {
+    padding: 0;
+  }
+
+  .form-list__item-submit {
+    padding: 0;
+  }
 }

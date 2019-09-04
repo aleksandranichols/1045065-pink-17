@@ -2,15 +2,21 @@
   @include list-clear;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 115px;
+  padding-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 10px;
+  justify-content: center;
 }
 
 .editor-list__editor-item {
   margin-right: 30px;
   position: relative;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .editor-list__svg-wrapper {
@@ -70,10 +76,10 @@
 .editor-list__editor-item-contrast::after {
   content: "";
   position: absolute;
-  width: 280px;
+  width: 240px;
   height: 2px;
   background-color: $darkblue-color;
-  left: -30px;
+  left: -25px;
   bottom: -30px;
 }
 
@@ -89,7 +95,7 @@
   width: 320px;
   height: 1px;
   background-color: $lightgray-color;
-  bottom: -70px;
+  bottom: -60px;
   left: -65px;
 }
 
@@ -106,7 +112,7 @@
   .editor-list {
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 45px;
+    padding-bottom: 80px;
   }
 
   .editor-list__formatting-wrapper {
@@ -120,7 +126,7 @@
   }
 
   .editor-list__editor-item {
-    margin-bottom: 35px;
+    margin-bottom: 12px;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -128,7 +134,7 @@
   }
 
   .editor-list__formatting-wrapper svg {
-    transform: scale(0.69);
+    transform: scale(0.5);
   }
 
   .editor-list__range-button-fill,
@@ -144,8 +150,12 @@
   .editor-list__highlight-fill::after,
   .editor-list__highlight-contrast::after {
     width: 270px;
-    bottom: -25px;
+    bottom: 5px;
     left: 0;
+  }
+
+  .editor-list__highlight-contrast::after {
+    bottom: -15px;
   }
 
   .editor-list__editor-item-crop::after,
@@ -153,21 +163,25 @@
   .editor-list__editor-item-contrast::after {
     width: 200px;
     left: 60px;
+    bottom: 40px;
+  }
+
+  .editor-list__editor-item-contrast::after {
     bottom: 20px;
   }
 
   .editor-list__range-button-crop {
-    right: -180px;
-    bottom: 15px;
+    right: -165px;
+    bottom: 35px;
   }
 
   .editor-list__range-button-fill {
-    right: -50px;
-    bottom: 15px;
+    right: -45px;
+    bottom: 35px;
   }
 
   .editor-list__range-button-contrast {
-    right: -100px;
+    right: -130px;
     bottom: 15px;
   }
 }

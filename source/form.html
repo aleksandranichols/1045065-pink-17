@@ -13,8 +13,6 @@
       <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
       <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
       <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
-      <script src="js/picturefill.min.js" async></script>
-      <script defer src="js/svgxuse.min.js"></script>
     </head>
     <body class="main-page">
       <header class="main-header main-header--closed main-header--nojs">
@@ -65,30 +63,31 @@
             <p>Пожалуйста, заполните форму ниже:</p>
           </header>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <ul class="form__form-list form-list">
-              <li class="form-list__item-text item-text">
-                <div class="main-container">
-                  <h3 class="visually-hidden">Ввод личных данных</h3>
-                  <p>
-                    <label for="last_name">Фамилия:</label>
-                    <input id="last_name" type="text" name="last_name" placeholder="Укажите фамилию *" required>
-                  </p>
-                  <p>
-                    <label for="first_name">Имя:</label>
-                    <input id="first_name" type="text" name="first_name" placeholder="Введите ваше имя *" required>
-                  </p>
-                  <p>
-                    <label for="middle_name">Отчество:</label>
-                    <input id="middle_name" type="text" name="middle_name" placeholder="Ну и отчество тоже">
-                  </p>
-                </div>
-              </li>
-              <li class="form-list__item-checkbox item-checkbox">
-                <div class="main-container">
+            <div class="main-container-desk">
+              <ul class="form__form-list form-list">
+                <li class="form-list__item-text item-text">
+                  <div class="main-container-mob">
+                    <h3 class="visually-hidden">Ввод личных данных</h3>
+                    <p>
+                      <label for="last_name">Фамилия:</label>
+                      <input id="last_name" type="text" name="last_name" placeholder="Укажите фамилию *" required>
+                    </p>
+                    <p>
+                      <label for="first_name">Имя:</label>
+                      <input id="first_name" type="text" name="first_name" placeholder="Введите ваше имя *" required>
+                    </p>
+                    <p>
+                      <label for="middle_name">Отчество:</label>
+                      <input id="middle_name" type="text" name="middle_name" placeholder="Ну и отчество тоже">
+                    </p>
+                  </div>
+                </li>
+                <li class="form-list__item-checkbox item-checkbox">
+                <div class="main-container-mob">
                   <h3 class="visually-hidden">Ваши достижения</h3>
                   <fieldset>
                     <legend>Ваши безбашенные достижения в путешествии</legend>
-                    <div>
+                    <div class="item-checkbox__options-wrapper">
                       <div class="item-checkbox__wrapper">
                         <input id="selfie-with-shark" type="checkbox" name="selfie-with-shark" checked>
                         <span class="item-checkbox__checkbox"></span>
@@ -130,28 +129,30 @@
                 </div>
               </li>
               <li class="form-list__item-email-tel item-email-tel">
-                <div class="main-container">
+                <div class="main-container-mob">
                   <fieldset>
                     <legend>Контактная информация</legend>
-                    <div class="item-email-tel__contacts-wrapper">
-                      <label for="tel">Номер телефона</label>
-                      <div class="item-email-tel__input-wrapper">
-                        <input class="item-email-tel__phone" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-                        <span class="item-email-tel__grayblock-1"></span>
+                    <div class="item-email-tel__fieldset-wrapper">
+                      <div class="item-email-tel__contacts-wrapper">
+                        <label for="tel">Номер телефона</label>
+                        <div class="item-email-tel__input-wrapper">
+                          <input class="item-email-tel__phone" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                          <span class="item-email-tel__grayblock-1"></span>
+                        </div>
+                      </div>
+                      <div class="item-email-tel__contacts-wrapper">
+                        <label for="email">Адрес почты</label>
+                        <div class="item-email-tel__input-wrapper">
+                          <input class="item-email-tel__email" id="email" type="email" name="email" placeholder="Введите почту *" required>
+                          <span class="item-email-tel__grayblock-2"></span>
+                        </div>
                       </div>
                     </div>
-                    <div class="item-email-tel__contacts-wrapper">
-                      <label for="email">Адрес почты</label>
-                      <div class="item-email-tel__input-wrapper">
-                        <input class="item-email-tel__email" id="email" type="email" name="email" placeholder="Введите почту *" required>
-                        <span class="item-email-tel__grayblock-2"></span>
-                      </div>
-                    </div>
-                </fieldset>
+                  </fieldset>
                 </div>
               </li>
               <li class="form-list__item-radio item-radio">
-                <div class="main-container">
+                <div class="main-container-mob">
                   <fieldset>
                     <legend>С каким приложением путешествовали?</legend>
                       <div class="item-radio__wrapper">
@@ -169,26 +170,27 @@
                         <span class="item-radio__checkmark"></span>
                         <label for="Windows">Windows Phone</label>
                       </div>
-                  </fieldset>
-                </div>
-              </li>
-              <li class="form-list__item-textarea item-textarea">
-                <div class="main-container">
-                  <fieldset>
-                    <legend>
-                      <label for="emotions">Опишите свои эмоции</label>
-                    </legend>
-                    <textarea id="emotions" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
-                </fieldset>
-                </div>
-              </li>
-              <li class="form-list__item-submit item-submit">
-                <div class="main-container">
-                  <button class="item-submit__button button" type="submit" aria-label="Отправить форму">Отправить форму</button>
-                  <p><span>*</span> — обязательные поля</p>
-                </div>
-              </li>
-            </ul>
+                    </fieldset>
+                  </div>
+                </li>
+                <li class="form-list__item-textarea item-textarea">
+                  <div class="main-container-mob">
+                    <fieldset>
+                      <legend>
+                        <label for="emotions">Опишите свои эмоции</label>
+                      </legend>
+                      <textarea id="emotions" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </fieldset>
+                  </div>
+                </li>
+                <li class="form-list__item-submit item-submit">
+                  <div class="main-container-mob main-container--flex-row">
+                    <button class="item-submit__button button" type="submit" aria-label="Отправить форму">Отправить форму</button>
+                    <p><span>*</span> — обязательные <span class="item-submit__required">для заполнения</span> поля</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </form>
         </section>
       </main>
@@ -234,6 +236,8 @@
           <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="error-modal__button button" type="button" aria-label="Закрыть окно">Ок</button>
       </section>
+      <script src="js/picturefill.min.js" async></script>
+      <script defer src="js/svgxuse.min.js"></script>
       <script src="js/script.js"></script>
     </body>
   </html>

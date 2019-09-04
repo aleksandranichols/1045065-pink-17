@@ -1,5 +1,5 @@
 .confirmation-modal {
-  display: none;
+  // display: none;
   position: fixed;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%, rgba(242, 242, 242, 1) 100%);
   font-size: 18px;
@@ -7,9 +7,11 @@
   font-weight: normal;
   color: $black-color;
   text-align: center;
-  padding: 0 20px;
-  width: 320px;
+  padding: 20px;
+  width: 280px;
   height: 380px;
+  top: 50%;
+  z-index: 1;
 }
 
 .confirmation-modal h3 {

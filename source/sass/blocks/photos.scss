@@ -1,15 +1,22 @@
 .photos__header {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding: 50px 40px;
+  width: 240px;
+  text-align: center;
 }
 
 .photos__header p {
   margin: 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .photos__header p {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .photos__header {
+    padding: 90px 40px 80px;
+    width: 560px;
   }
 }

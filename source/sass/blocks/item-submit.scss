@@ -44,20 +44,40 @@
   color: $lipstick-color;
 }
 
+.item-submit .item-submit__required {
+  color: $darkblue-color;
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .item-submit {
     order: -2;
   }
 
-  .item-submit .main-container {
+  .item-submit .main-container-mob {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
   }
 
   .item-submit__button {
-    margin-right: 130px;
-    padding-left: 45px;
-    padding-right: 45px;
+    margin-right: 128px;
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-submit {
+    order: 1;
+    width: 960px;
+  }
+
+  .item-submit__button {
+    margin-right: 310px;
+  }
+
+  .item-submit .item-submit__required {
+    display: inline-block;
+    vertical-align: baseline;
   }
 }
