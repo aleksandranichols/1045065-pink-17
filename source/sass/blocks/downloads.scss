@@ -32,6 +32,7 @@
 
   .downloads p {
     font-size: 18px;
+    padding: 0;
   }
 
   .downloads__button {
@@ -46,10 +47,15 @@
 @media (min-width: $desktop-width) {
   .downloads {
     padding: 0;
+    margin-right: 650px;
   }
 
-  .downloads__button,
-  .downloads__options {
+  .downloads__button {
     margin-bottom: 65px;
+  }
+
+  .downloads__options {
+    margin-bottom: 55px;
+    justify-content: flex-end;
   }
 }

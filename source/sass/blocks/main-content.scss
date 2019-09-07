@@ -3,8 +3,8 @@
   z-index: 2;
 }
 
-.main-content__background-wrapper--stop-points-25 {
-  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(242, 242, 242, 1) 25%, rgba(242, 242, 242, 1) 100%);
+.main-content__background-wrapper--stop-points-23 {
+  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 23%, rgba(242, 242, 242, 1) 23%, rgba(242, 242, 242, 1) 100%);
 }
 
 .main-content__background-wrapper--stop-points-45 {
@@ -84,7 +84,7 @@
     z-index: 0;
   }
 
-  .main-content__background-wrapper--stop-points-25 {
+  .main-content__background-wrapper--stop-points-23 {
     background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(242, 242, 242, 1) 35%, rgba(242, 242, 242, 1) 100%);
   }
 
@@ -138,7 +138,7 @@
     width: 660px;
     height: 650px;
     top: 95px;
-    left: 10px;
+    left: 2px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -163,6 +163,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-content__background-wrapper--stop-points-23 {
+    background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(242, 242, 242, 1) 40%, rgba(242, 242, 242, 1) 100%);
+  }
+
+  .main-content__background-wrapper--stop-points-45 {
+    background: linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(242, 242, 242, 1) 51%, rgba(242, 242, 242, 1) 100%);
+  }
+
   .main-content__downloads-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center;
@@ -179,7 +187,9 @@
   }
 
   .main-content__photo-sample {
-    padding-top: 225px;
+    padding-top: 235px;
+    width: 1000px;
+    height: 225px;
   }
 
   .main-content__photo-sample::after {
@@ -189,8 +199,8 @@
     background-repeat: no-repeat;
     height: 650px;
     width: 800px;
-    top: 230px;
-    left: 50px;
+    top: 223px;
+    left: 170px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -208,8 +218,8 @@
 
   .main-content__slogan {
     font-size: 50px;
-    line-height: 70px;
-    width: 200px;
+    line-height: 60px;
+    width: 250px;
     padding: 0;
   }
 
@@ -218,6 +228,10 @@
   }
 
   .main-content__contacts {
-    margin-right: -20px;
+    padding-top: 60px;
+  }
+
+  .main-content__pricing {
+    margin-bottom: 60px;
   }
 }

@@ -7,9 +7,8 @@
   text-transform: uppercase;
 }
 
-.item-textarea label {
-  margin-bottom: 5px;
-  padding-left: 20px;
+.item-textarea legend {
+  margin-bottom: 10px;
 }
 
 .item-textarea fieldset {
@@ -24,6 +23,7 @@
   padding: 20px 20px;
   border: 2px solid $lightgray-color;
   font-size: 18px;
+  line-height: 30px;
   resize: none;
 
   &:hover {
@@ -63,20 +63,22 @@
 @media (min-width: $desktop-width) {
   .item-textarea {
     order: 0;
-    width: 960px;
+    width: 800px;
   }
 
   .item-textarea textarea {
-    width: 770px;
-    height: 85px;
+    width: 775px;
+    height: 90px;
+    padding-top: 15px;
   }
 
   .item-textarea fieldset {
+    width: 840px;
     padding-left: 40px;
     padding-bottom: 30px;
   }
 
   .item-textarea legend {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }

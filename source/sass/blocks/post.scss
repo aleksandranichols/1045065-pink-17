@@ -3,7 +3,7 @@
 }
 
 .post__header {
-  margin-bottom: 65px;
+  margin-bottom: 55px;
 }
 
 .post__header p {
@@ -24,6 +24,16 @@
 
   .post__header {
     padding-bottom: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    background: $white-color;
+  }
+
+  .post__header {
+    margin-bottom: 0;
   }
 }

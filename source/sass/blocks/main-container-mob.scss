@@ -1,4 +1,4 @@
-.main-container {
+.main-container-mob {
   width: auto;
   display: flex;
   flex-direction: column;
@@ -7,19 +7,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-container {
+  .main-container-mob {
     width: auto;
+    align-items: stretch;
   }
 
-  .main-container--flex-row {
+  .main-container-mob--flex-row {
     flex-direction: row;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-container {
-    position: relative;
+  .main-container-mob {
+    padding: 0;
     width: 960px;
-    padding: 0 120px;
   }
 }

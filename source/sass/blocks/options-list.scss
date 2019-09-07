@@ -56,3 +56,13 @@
   bottom: 0;
   left: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .options-list {
+    width: 220px;
+  }
+
+  .options-list__item {
+    margin-right: 30px;
+  }
+}

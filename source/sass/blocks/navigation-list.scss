@@ -43,11 +43,11 @@
 @media (min-width: $desktop-width) {
   .navigation-list {
     display: flex;
-    width: 640px;
+    width: 620px;
     align-items: flex-end;
     font-weight: normal;
     text-transform: none;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .navigation-list__navigation-item {
@@ -55,7 +55,7 @@
       color: transparentize($white-color, 0.3);
     }
 
-    margin-right: 90px;
+    margin-right: 83px;
     padding: 0;
 
     &:nth-of-type(odd),

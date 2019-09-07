@@ -61,8 +61,8 @@
   border: 2px solid $lipstick-color;
   border-radius: 50%;
   cursor: pointer;
-  right: -130px;
-  bottom: -35px;
+  right: -135px;
+  bottom: -30px;
 
   &:hover,
   &:focus {
@@ -80,7 +80,7 @@
   height: 2px;
   background-color: $darkblue-color;
   left: -25px;
-  bottom: -30px;
+  bottom: -25px;
 }
 
 .editor-list__highlight {
@@ -113,6 +113,8 @@
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 80px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .editor-list__formatting-wrapper {
@@ -126,7 +128,7 @@
   }
 
   .editor-list__editor-item {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -155,7 +157,7 @@
   }
 
   .editor-list__highlight-contrast::after {
-    bottom: -15px;
+    bottom: -10px;
   }
 
   .editor-list__editor-item-crop::after,
@@ -163,66 +165,79 @@
   .editor-list__editor-item-contrast::after {
     width: 200px;
     left: 60px;
-    bottom: 40px;
+    bottom: 35px;
+  }
+
+  .editor-list__editor-item-fill::after {
+    bottom: 35px;
   }
 
   .editor-list__editor-item-contrast::after {
-    bottom: 20px;
+    bottom: 25px;
   }
 
   .editor-list__range-button-crop {
-    right: -165px;
-    bottom: 35px;
+    right: -175px;
+    bottom: 30px;
   }
 
   .editor-list__range-button-fill {
-    right: -45px;
-    bottom: 35px;
+    right: -50px;
+    bottom: 30px;
   }
 
   .editor-list__range-button-contrast {
-    right: -130px;
-    bottom: 15px;
+    right: -140px;
+    bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .editor-list__editor-item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .editor-list__editor-item-crop::after,
   .editor-list__editor-item-fill::after,
   .editor-list__editor-item-contrast::after {
     width: 290px;
-    left: 110px;
-    bottom: 30px;
+    left: 90px;
+    bottom: 35px;
   }
+
+  .editor-list__editor-item-fill::after {
+    bottom: 40px;
+  }
+
+  .editor-list__editor-item-contrast::after {
+    bottom: 25px;
+  }
+
 
   .editor-list__formatting-wrapper svg {
     transform: scale(1);
   }
 
   .editor-list__range-button-crop {
-    right: -150px;
-    bottom: 25px;
+    right: -130px;
+    bottom: 30px;
   }
 
   .editor-list__range-button-fill {
-    right: -320px;
-    bottom: 25px;
+    right: -305px;
+    bottom: 35px;
   }
 
   .editor-list__range-button-contrast {
-    right: -250px;
-    bottom: 25px;
+    right: -235px;
+    bottom: 20px;
   }
 
   .editor-list__highlight-contrast::after,
   .editor-list__highlight-crop::after,
   .editor-list__highlight-fill::after {
     width: 410px;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
   }
 }

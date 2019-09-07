@@ -890,7 +890,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1200px) {
   .header-container {
     max-width: 960px;
-    padding: 0 130px; } }
+    padding: 0 120px; } }
 
 .main-container {
   width: auto;
@@ -916,7 +916,7 @@ input[type="radio"].visually-hidden {
   .main-container {
     position: relative;
     width: 960px;
-    padding: 0 130px; } }
+    padding: 0 120px; } }
 
 .footer-container {
   width: auto;
@@ -949,7 +949,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1200px) {
   .footer-container {
     max-width: 960px;
-    padding: 0 130px; } }
+    padding: 0 120px; } }
 
 .navigation-list {
   list-style-type: none;
@@ -1778,12 +1778,12 @@ input[type="radio"].visually-hidden {
   .main-footer {
     padding: 40px 20px;
     display: block; }
-  .main-footer__footer--mobile:hover path,
-  .main-footer__footer--mobile:focus path {
+  .main-footer__logo--mobile:hover path,
+  .main-footer__logo--mobile:focus path {
     fill: #d22856; }
-  .main-footer__footer--mobile:active path {
+  .main-footer__logo--mobile:active path {
     opacity: 0.3; }
-  .main-footer__footer--desktop {
+  .main-footer__logo--desktop {
     display: none; }
   .main-footer__logolink,
   .main-footer__socials {
@@ -1792,9 +1792,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1200px) {
   .main-footer {
     width: 100%; }
-  .main-footer__footer--mobile {
+  .main-footer__logo--mobile {
     display: none; }
-  .main-footer__footer--desktop {
+  .main-footer__logo--desktop {
     display: block; }
   .main-footer__logolink,
   .main-footer__socials {
@@ -1819,7 +1819,7 @@ input[type="radio"].visually-hidden {
 .main-footer-inner__logolink use:first-of-type {
   color: #d22856; }
 
-.main-footer-inner__footer--desktop {
+.main-footer-inner__logo--desktop {
   display: none; }
 
 @media (min-width: 660px) {
@@ -1836,9 +1836,9 @@ input[type="radio"].visually-hidden {
   .main-footer-inner__logolink,
   .main-footer-inner__socials {
     margin-right: 220px; }
-  .main-footer-inner__footer--mobile {
+  .main-footer-inner__logo--mobile {
     display: none; }
-  .main-footer-inner__footer--desktop {
+  .main-footer-inner__logo--desktop {
     display: block; } }
 
 .copyright {

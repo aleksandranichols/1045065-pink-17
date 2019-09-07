@@ -32,7 +32,7 @@
 
 .main-content-photos__current-page p {
   margin: 0;
-  padding-top: 40px;
+  padding-top: 45px;
   text-align: center;
 }
 
@@ -62,16 +62,24 @@
   }
 
   .main-content-photos__photos {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-content-photos__photos {
+    margin-bottom: 0;
+  }
+
+  .main-content-photos__post {
+    margin-bottom: 50px;
+  }
+
   .main-content-photos__current-page {
     background: url("../img/bg-back-desktop@1x.jpg");
     background-position: center;
     background-size: cover;
-    padding: 200px 130px 0;
+    padding: 150px 0 35px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-back-desktop@2x.jpg");
@@ -81,7 +89,7 @@
   }
 
   .main-content-photos__current-page p {
-    padding: 0 20px;
     width: 560px;
+    padding-top: 40px;
   }
 }

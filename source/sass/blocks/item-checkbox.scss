@@ -16,8 +16,9 @@
 .item-checkbox legend {
   color: $lipstick-color;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   padding: 0 20px;
 }
 
@@ -29,7 +30,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 
 .item-checkbox input[type="checkbox"] {
@@ -98,6 +99,8 @@ input[type="checkbox"]:checked ~ .item-checkbox__not-checked {
 
   .item-checkbox legend {
     margin-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -105,26 +108,26 @@ input[type="checkbox"]:checked ~ .item-checkbox__not-checked {
   .item-checkbox {
     display: flex;
     flex-wrap: wrap;
+    width: 940px;
   }
 
   .item-checkbox__options-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 870px;
+    width: 880px;
   }
 
   .item-checkbox__wrapper {
-    width: 260px;
+    width: 265px;
   }
 
   .item-checkbox fieldset {
     padding-right: 0;
-    padding-left: 60px;
     padding-bottom: 10px;
   }
 
   .item-checkbox legend {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 }

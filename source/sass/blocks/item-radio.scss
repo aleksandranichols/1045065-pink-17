@@ -16,8 +16,9 @@
 .item-radio legend {
   color: $lipstick-color;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .item-radio__wrapper {
@@ -96,26 +97,31 @@ input[type="radio"]:checked ~ .item-checkbox__checkbox {
 
   .item-radio legend {
     padding: 0 20px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
+  }
+
+  .item-radio input[type="radio"] {
+    margin-right: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .item-radio {
     display: flex;
-    width: 450px;
+    width: 440px;
     order: -2;
     padding: 0;
   }
 
   .item-radio fieldset {
     border: 2px solid $lightgray-color;
-    padding-left: 70px;
+    padding-left: 80px;
     padding-bottom: 10px;
-    padding-right: 10px;
+    padding-right: 0;
   }
 
   .item-radio legend {
-    margin-bottom: 40px;
+    padding: 0 10px;
+    margin-bottom: 45px;
   }
 }

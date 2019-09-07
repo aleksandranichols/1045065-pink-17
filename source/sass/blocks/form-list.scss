@@ -10,23 +10,23 @@
 }
 
 .form-list__item-checkbox {
-  padding: 30px 20px 0;
-  margin-bottom: 40px;
+  padding: 40px 20px 0;
+  margin-bottom: 30px;
 }
 
 .form-list__item-email-tel {
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   padding: 0 20px;
 }
 
 .form-list__item-radio {
   padding: 30px 20px 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .form-list__item-textarea {
   padding: 0 20px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .form-list__item-submit {
@@ -70,7 +70,11 @@
     width: 960px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  .form-list__item-text {
+    margin-right: 60px;
+    margin-bottom: 50px;
   }
 
   .form-list__item-radio {
@@ -79,11 +83,12 @@
 
   .form-list__item-email-tel {
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .form-list__item-checkbox {
     padding: 0;
+    margin-bottom: 50px;
   }
 
   .form-list__item-textarea {

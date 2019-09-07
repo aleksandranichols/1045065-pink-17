@@ -57,7 +57,7 @@
 @media (min-width: $desktop-width) {
   .testimonials-list__item {
     position: relative;
-    padding-top: 180px;
+    padding-top: 190px;
   }
 
   .testimonials-list__item::before {
@@ -67,12 +67,12 @@
     background-repeat: no-repeat;
     width: 79px;
     height: 64px;
-    top: 60px;
-    left: 320px;
+    top: 75px;
+    left: 315px;
   }
 
   .testimonials-list__quote {
-    width: 700px;
+    width: 710px;
     text-align: center;
   }
 
@@ -85,8 +85,8 @@
     width: 22px;
     height: 41px;
     opacity: 0.3;
-    bottom: 130px;
-    left: -100px;
+    bottom: 125px;
+    left: -115px;
   }
 
   .testimonials-list__quote:hover::before,
@@ -112,8 +112,8 @@
     width: 22px;
     height: 41px;
     opacity: 0.3;
-    right: -100px;
-    bottom: 130px;
+    right: -115px;
+    bottom: 125px;
   }
 
   .testimonials-list__author {

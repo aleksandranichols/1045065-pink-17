@@ -27,12 +27,16 @@
   color: $lipstick-color;
 }
 
-.main-footer-inner__footer--desktop {
+.main-footer-inner__logo--desktop {
   display: none;
 }
 
 .main-footer-inner__photos {
-  padding-top: 40px;
+  padding: 30px 0;
+}
+
+.main-footer-inner__form {
+  padding-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,13 +45,17 @@
   }
 
   .main-footer-inner__photos {
-    padding: 35px 20px;
+    padding: 40px 20px;
   }
 
   .main-footer-inner__logolink,
   .main-footer-inner__socials {
     margin-right: 70px;
     margin-bottom: 0;
+  }
+
+  .main-footer-inner__photos .main-footer-inner__logolink {
+    margin-right: 55px;
   }
 }
 
@@ -57,16 +65,28 @@
     padding: 22px 0 40px;
   }
 
-  .main-footer-inner__logolink,
-  .main-footer-inner__socials {
-    margin-right: 225px;
+  .main-footer-inner__photos {
+    padding: 40px 0;
   }
 
-  .main-footer-inner__footer--mobile {
+  .main-footer-inner__logolink {
+    margin-right: 190px;
+    padding-left: 10px;
+  }
+
+  .main-footer-inner__socials {
+    margin-right: 180px;
+  }
+
+  .main-footer-inner__logo--mobile {
     display: none;
   }
 
-  .main-footer-inner__footer--desktop {
+  .main-footer-inner__logo--desktop {
     display: block;
+  }
+
+  .main-footer-inner__copyright {
+    padding-right: 10px;
   }
 }

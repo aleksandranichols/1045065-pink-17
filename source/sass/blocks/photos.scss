@@ -1,5 +1,5 @@
 .photos__header {
-  padding: 50px 40px;
+  padding: 45px 0 50px;
   width: 240px;
   text-align: center;
 }
@@ -16,7 +16,14 @@
   }
 
   .photos__header {
-    padding: 90px 40px 80px;
-    width: 560px;
+    padding: 90px 0 80px;
+    width: 540px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__header {
+    width: 570px;
+    padding: 90px 0;
   }
 }

@@ -1,17 +1,18 @@
 .confirmation-modal {
   display: none;
   position: fixed;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%, rgba(242, 242, 242, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 55%, rgba(242, 242, 242, 1) 55%, rgba(242, 242, 242, 1) 100%);
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
   color: $black-color;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   width: 280px;
-  height: 380px;
+  height: 250px;
   top: 50%;
   z-index: 1;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .confirmation-modal h3 {
@@ -49,5 +50,32 @@
   &:disabled {
     color: $white-color;
     background-color: $lightgray-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .confirmation-modal {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+  }
+
+  .confirmation-modal p {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .confirmation-modal {
+    width: 780px;
+    left: 50%;
+    margin-left: -390px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .confirmation-modal p {
+    font-size: 18px;
+    line-height: 24px;
   }
 }

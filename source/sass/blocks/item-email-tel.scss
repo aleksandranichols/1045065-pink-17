@@ -31,7 +31,7 @@
 }
 
 .item-email-tel label {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   padding-left: 20px;
 }
 
@@ -60,21 +60,21 @@
 @media (min-width: $tablet-width) {
   .item-email-tel fieldset {
     border: 2px solid $lightgray-color;
-    padding: 0 55px 20px;
+    padding: 0 55px 25px;
   }
 
   .item-email-tel legend {
     display: block;
     padding: 0 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .item-email-tel input {
     position: relative;
     width: 400px;
-    height: 20px;
+    height: 25px;
     order: -1;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .item-email-tel label {
@@ -97,7 +97,7 @@
     display: block;
     position: relative;
     width: 60px;
-    height: 58px;
+    height: 63px;
     background: $lightgray-color;
   }
 
@@ -108,7 +108,7 @@
     height: 19px;
     background-image: url("../img/icon-phone.svg");
     right: 20px;
-    top: 20px;
+    top: 23px;
   }
 
   .item-email-tel__grayblock-2::after {
@@ -118,7 +118,7 @@
     height: 13px;
     background-image: url("../img/icon-mail.svg");
     right: 21px;
-    top: 21px;
+    top: 24px;
   }
 }
 
@@ -137,20 +137,20 @@
   }
 
   .item-email-tel__contacts-wrapper:first-of-type .item-email-tel__input-wrapper {
-    margin-right: 60px;
+    margin-right: 65px;
   }
 
   .item-email-tel input {
     width: 280px;
     height: 25px;
     line-height: 30px;
+    padding-right: 15px;
   }
 
   .item-email-tel fieldset {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    padding-right: 75px;
+    width: 830px;
     padding-bottom: 10px;
   }
 

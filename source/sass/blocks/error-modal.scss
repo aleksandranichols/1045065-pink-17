@@ -7,11 +7,12 @@
   font-weight: normal;
   color: $black-color;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   width: 280px;
-  height: 290px;
+  height: 220px;
   top: 50%;
   z-index: 1;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .error-modal h3 {
@@ -50,5 +51,32 @@
   &:disabled {
     color: $white-color;
     background-color: $lightgray-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .error-modal {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+  }
+
+  .error-modal p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .error-modal {
+    width: 780px;
+    left: 50%;
+    margin-left: -390px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .error-modal p {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
